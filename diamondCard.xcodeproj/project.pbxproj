@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		437BE38E1F89547A00F7FB0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE38D1F89547A00F7FB0C /* AppDelegate.m */; };
+		437BE3911F89547B00F7FB0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3901F89547B00F7FB0C /* ViewController.m */; };
+		437BE3941F89547B00F7FB0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437BE3921F89547B00F7FB0C /* Main.storyboard */; };
+		437BE3961F89547B00F7FB0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437BE3951F89547B00F7FB0C /* Assets.xcassets */; };
+		437BE3991F89547B00F7FB0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437BE3971F89547B00F7FB0C /* LaunchScreen.storyboard */; };
+		437BE39C1F89547B00F7FB0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE39B1F89547B00F7FB0C /* main.m */; };
+		437BE3A61F89547B00F7FB0C /* diamondCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3A51F89547B00F7FB0C /* diamondCardTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		437BE3A21F89547B00F7FB0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437BE3811F89547900F7FB0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 437BE3881F89547900F7FB0C;
+			remoteInfo = diamondCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		437BE3891F89547A00F7FB0C /* diamondCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diamondCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		437BE38C1F89547A00F7FB0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		437BE38D1F89547A00F7FB0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		437BE38F1F89547B00F7FB0C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		437BE3901F89547B00F7FB0C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		437BE3931F89547B00F7FB0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		437BE3951F89547B00F7FB0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		437BE3981F89547B00F7FB0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		437BE39A1F89547B00F7FB0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		437BE39B1F89547B00F7FB0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		437BE3A11F89547B00F7FB0C /* diamondCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = diamondCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		437BE3A51F89547B00F7FB0C /* diamondCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = diamondCardTests.m; sourceTree = "<group>"; };
+		437BE3A71F89547B00F7FB0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		437BE3861F89547900F7FB0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437BE39E1F89547B00F7FB0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		437BE3801F89547900F7FB0C = {
+			isa = PBXGroup;
+			children = (
+				437BE38B1F89547A00F7FB0C /* diamondCard */,
+				437BE3A41F89547B00F7FB0C /* diamondCardTests */,
+				437BE38A1F89547A00F7FB0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		437BE38A1F89547A00F7FB0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				437BE3891F89547A00F7FB0C /* diamondCard.app */,
+				437BE3A11F89547B00F7FB0C /* diamondCardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		437BE38B1F89547A00F7FB0C /* diamondCard */ = {
+			isa = PBXGroup;
+			children = (
+				437BE38C1F89547A00F7FB0C /* AppDelegate.h */,
+				437BE38D1F89547A00F7FB0C /* AppDelegate.m */,
+				437BE38F1F89547B00F7FB0C /* ViewController.h */,
+				437BE3901F89547B00F7FB0C /* ViewController.m */,
+				437BE3921F89547B00F7FB0C /* Main.storyboard */,
+				437BE3951F89547B00F7FB0C /* Assets.xcassets */,
+				437BE3971F89547B00F7FB0C /* LaunchScreen.storyboard */,
+				437BE39A1F89547B00F7FB0C /* Info.plist */,
+				437BE39B1F89547B00F7FB0C /* main.m */,
+			);
+			path = diamondCard;
+			sourceTree = "<group>";
+		};
+		437BE3A41F89547B00F7FB0C /* diamondCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				437BE3A51F89547B00F7FB0C /* diamondCardTests.m */,
+				437BE3A71F89547B00F7FB0C /* Info.plist */,
+			);
+			path = diamondCardTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		437BE3881F89547900F7FB0C /* diamondCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437BE3AA1F89547B00F7FB0C /* Build configuration list for PBXNativeTarget "diamondCard" */;
+			buildPhases = (
+				437BE3851F89547900F7FB0C /* Sources */,
+				437BE3861F89547900F7FB0C /* Frameworks */,
+				437BE3871F89547900F7FB0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = diamondCard;
+			productName = diamondCard;
+			productReference = 437BE3891F89547A00F7FB0C /* diamondCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		437BE3A01F89547B00F7FB0C /* diamondCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437BE3AD1F89547B00F7FB0C /* Build configuration list for PBXNativeTarget "diamondCardTests" */;
+			buildPhases = (
+				437BE39D1F89547B00F7FB0C /* Sources */,
+				437BE39E1F89547B00F7FB0C /* Frameworks */,
+				437BE39F1F89547B00F7FB0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				437BE3A31F89547B00F7FB0C /* PBXTargetDependency */,
+			);
+			name = diamondCardTests;
+			productName = diamondCardTests;
+			productReference = 437BE3A11F89547B00F7FB0C /* diamondCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		437BE3811F89547900F7FB0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "NSD NULL";
+				TargetAttributes = {
+					437BE3881F89547900F7FB0C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					437BE3A01F89547B00F7FB0C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 437BE3881F89547900F7FB0C;
+					};
+				};
+			};
+			buildConfigurationList = 437BE3841F89547900F7FB0C /* Build configuration list for PBXProject "diamondCard" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 437BE3801F89547900F7FB0C;
+			productRefGroup = 437BE38A1F89547A00F7FB0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				437BE3881F89547900F7FB0C /* diamondCard */,
+				437BE3A01F89547B00F7FB0C /* diamondCardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		437BE3871F89547900F7FB0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437BE3991F89547B00F7FB0C /* LaunchScreen.storyboard in Resources */,
+				437BE3961F89547B00F7FB0C /* Assets.xcassets in Resources */,
+				437BE3941F89547B00F7FB0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437BE39F1F89547B00F7FB0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		437BE3851F89547900F7FB0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437BE3911F89547B00F7FB0C /* ViewController.m in Sources */,
+				437BE39C1F89547B00F7FB0C /* main.m in Sources */,
+				437BE38E1F89547A00F7FB0C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437BE39D1F89547B00F7FB0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437BE3A61F89547B00F7FB0C /* diamondCardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		437BE3A31F89547B00F7FB0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 437BE3881F89547900F7FB0C /* diamondCard */;
+			targetProxy = 437BE3A21F89547B00F7FB0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		437BE3921F89547B00F7FB0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				437BE3931F89547B00F7FB0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		437BE3971F89547B00F7FB0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				437BE3981F89547B00F7FB0C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		437BE3A81F89547B00F7FB0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		437BE3A91F89547B00F7FB0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		437BE3AB1F89547B00F7FB0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 328Q23T368;
+				INFOPLIST_FILE = diamondCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsd.diamondCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		437BE3AC1F89547B00F7FB0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 328Q23T368;
+				INFOPLIST_FILE = diamondCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsd.diamondCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		437BE3AE1F89547B00F7FB0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 328Q23T368;
+				INFOPLIST_FILE = diamondCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsd.diamondCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diamondCard.app/diamondCard";
+			};
+			name = Debug;
+		};
+		437BE3AF1F89547B00F7FB0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 328Q23T368;
+				INFOPLIST_FILE = diamondCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsd.diamondCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diamondCard.app/diamondCard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		437BE3841F89547900F7FB0C /* Build configuration list for PBXProject "diamondCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437BE3A81F89547B00F7FB0C /* Debug */,
+				437BE3A91F89547B00F7FB0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		437BE3AA1F89547B00F7FB0C /* Build configuration list for PBXNativeTarget "diamondCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437BE3AB1F89547B00F7FB0C /* Debug */,
+				437BE3AC1F89547B00F7FB0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		437BE3AD1F89547B00F7FB0C /* Build configuration list for PBXNativeTarget "diamondCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437BE3AE1F89547B00F7FB0C /* Debug */,
+				437BE3AF1F89547B00F7FB0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 437BE3811F89547900F7FB0C /* Project object */;
+}
