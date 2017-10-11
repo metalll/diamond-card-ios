@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DCLoginViewController.h
 //  diamondCard
 //
 //  Created by NSD on 07.10.17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DCLoginViewController : UIViewController <UITextFieldDelegate>
 
 @end
-

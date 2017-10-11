@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		434886181F896E1D007CC64F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434886121F896D9F007CC64F /* WebKit.framework */; };
+		4348861B1F897D18007CC64F /* DCRegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4348861A1F897D18007CC64F /* DCRegViewController.m */; };
+		434886221F8A105C007CC64F /* LGHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 434886211F8A105B007CC64F /* LGHTTPClient.m */; };
+		434886261F8A10A3007CC64F /* LGError.m in Sources */ = {isa = PBXBuildFile; fileRef = 434886251F8A10A3007CC64F /* LGError.m */; };
+		4348862C1F8A19DF007CC64F /* NSDictionary+LGHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 4348862B1F8A19DF007CC64F /* NSDictionary+LGHTTP.m */; };
+		434886301F8A1A5C007CC64F /* NSMutableURLRequest+LGHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 4348862F1F8A1A5C007CC64F /* NSMutableURLRequest+LGHTTP.m */; };
+		434886331F8A1AF3007CC64F /* DCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 434886321F8A1AF3007CC64F /* DCRequest.m */; };
 		437BE38E1F89547A00F7FB0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE38D1F89547A00F7FB0C /* AppDelegate.m */; };
 		437BE3911F89547B00F7FB0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3901F89547B00F7FB0C /* ViewController.m */; };
 		437BE3941F89547B00F7FB0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437BE3921F89547B00F7FB0C /* Main.storyboard */; };
@@ -14,6 +21,8 @@
 		437BE3991F89547B00F7FB0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437BE3971F89547B00F7FB0C /* LaunchScreen.storyboard */; };
 		437BE39C1F89547B00F7FB0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE39B1F89547B00F7FB0C /* main.m */; };
 		437BE3A61F89547B00F7FB0C /* diamondCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3A51F89547B00F7FB0C /* diamondCardTests.m */; };
+		437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3B31F8954BF00F7FB0C /* DCLoginViewController.m */; };
+		D7AAA0F61F8E40E6003A7F6C /* ACProgressBarDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AAA0F51F8E40E6003A7F6C /* ACProgressBarDisplayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		434886121F896D9F007CC64F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		434886191F897D18007CC64F /* DCRegViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCRegViewController.h; sourceTree = "<group>"; };
+		4348861A1F897D18007CC64F /* DCRegViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCRegViewController.m; sourceTree = "<group>"; };
+		434886201F8A105B007CC64F /* LGHTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHTTPClient.h; sourceTree = "<group>"; };
+		434886211F8A105B007CC64F /* LGHTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHTTPClient.m; sourceTree = "<group>"; };
+		434886241F8A10A3007CC64F /* LGError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGError.h; sourceTree = "<group>"; };
+		434886251F8A10A3007CC64F /* LGError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGError.m; sourceTree = "<group>"; };
+		434886271F8A1701007CC64F /* LGDataSerializerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGDataSerializerProtocol.h; sourceTree = "<group>"; };
+		434886281F8A172D007CC64F /* LGRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGRequestProtocol.h; sourceTree = "<group>"; };
+		4348862A1F8A19DF007CC64F /* NSDictionary+LGHTTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LGHTTP.h"; sourceTree = "<group>"; };
+		4348862B1F8A19DF007CC64F /* NSDictionary+LGHTTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LGHTTP.m"; sourceTree = "<group>"; };
+		4348862E1F8A1A5C007CC64F /* NSMutableURLRequest+LGHTTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+LGHTTP.h"; sourceTree = "<group>"; };
+		4348862F1F8A1A5C007CC64F /* NSMutableURLRequest+LGHTTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+LGHTTP.m"; sourceTree = "<group>"; };
+		434886311F8A1AF3007CC64F /* DCRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCRequest.h; sourceTree = "<group>"; };
+		434886321F8A1AF3007CC64F /* DCRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCRequest.m; sourceTree = "<group>"; };
 		437BE3891F89547A00F7FB0C /* diamondCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diamondCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		437BE38C1F89547A00F7FB0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		437BE38D1F89547A00F7FB0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +64,11 @@
 		437BE3A11F89547B00F7FB0C /* diamondCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = diamondCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		437BE3A51F89547B00F7FB0C /* diamondCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = diamondCardTests.m; sourceTree = "<group>"; };
 		437BE3A71F89547B00F7FB0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		437BE3B21F8954BF00F7FB0C /* DCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCLoginViewController.h; sourceTree = "<group>"; };
+		437BE3B31F8954BF00F7FB0C /* DCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCLoginViewController.m; sourceTree = "<group>"; };
+		437BE3B61F895D3200F7FB0C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D7AAA0F41F8E40E6003A7F6C /* ACProgressBarDisplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACProgressBarDisplayer.h; sourceTree = "<group>"; };
+		D7AAA0F51F8E40E6003A7F6C /* ACProgressBarDisplayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACProgressBarDisplayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434886181F896E1D007CC64F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +90,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4348861C1F8A06EF007CC64F /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				D7AAA0F41F8E40E6003A7F6C /* ACProgressBarDisplayer.h */,
+				D7AAA0F51F8E40E6003A7F6C /* ACProgressBarDisplayer.m */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		4348861D1F8A0E5E007CC64F /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				434886311F8A1AF3007CC64F /* DCRequest.h */,
+				434886321F8A1AF3007CC64F /* DCRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		4348861E1F8A0E67007CC64F /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				434886201F8A105B007CC64F /* LGHTTPClient.h */,
+				434886211F8A105B007CC64F /* LGHTTPClient.m */,
+				434886271F8A1701007CC64F /* LGDataSerializerProtocol.h */,
+				434886281F8A172D007CC64F /* LGRequestProtocol.h */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		4348861F1F8A0E72007CC64F /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		434886231F8A108F007CC64F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				434886241F8A10A3007CC64F /* LGError.h */,
+				434886251F8A10A3007CC64F /* LGError.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		434886291F8A19A2007CC64F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4348862A1F8A19DF007CC64F /* NSDictionary+LGHTTP.h */,
+				4348862B1F8A19DF007CC64F /* NSDictionary+LGHTTP.m */,
+				4348862E1F8A1A5C007CC64F /* NSMutableURLRequest+LGHTTP.h */,
+				4348862F1F8A1A5C007CC64F /* NSMutableURLRequest+LGHTTP.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		437BE3801F89547900F7FB0C = {
 			isa = PBXGroup;
 			children = (
 				437BE38B1F89547A00F7FB0C /* diamondCard */,
 				437BE3A41F89547B00F7FB0C /* diamondCardTests */,
 				437BE38A1F89547A00F7FB0C /* Products */,
+				437BE3B51F895D3100F7FB0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +168,10 @@
 		437BE38B1F89547A00F7FB0C /* diamondCard */ = {
 			isa = PBXGroup;
 			children = (
+				434886231F8A108F007CC64F /* Entity */,
+				4348861C1F8A06EF007CC64F /* CustomView */,
+				437BE3B11F8954A400F7FB0C /* View */,
+				437BE3B01F89549700F7FB0C /* Networking */,
 				437BE38C1F89547A00F7FB0C /* AppDelegate.h */,
 				437BE38D1F89547A00F7FB0C /* AppDelegate.m */,
 				437BE38F1F89547B00F7FB0C /* ViewController.h */,
@@ -101,6 +192,37 @@
 				437BE3A71F89547B00F7FB0C /* Info.plist */,
 			);
 			path = diamondCardTests;
+			sourceTree = "<group>";
+		};
+		437BE3B01F89549700F7FB0C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				434886291F8A19A2007CC64F /* Categories */,
+				4348861F1F8A0E72007CC64F /* Parsers */,
+				4348861E1F8A0E67007CC64F /* Client */,
+				4348861D1F8A0E5E007CC64F /* Requests */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		437BE3B11F8954A400F7FB0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				437BE3B21F8954BF00F7FB0C /* DCLoginViewController.h */,
+				437BE3B31F8954BF00F7FB0C /* DCLoginViewController.m */,
+				434886191F897D18007CC64F /* DCRegViewController.h */,
+				4348861A1F897D18007CC64F /* DCRegViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		437BE3B51F895D3100F7FB0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				434886121F896D9F007CC64F /* WebKit.framework */,
+				437BE3B61F895D3200F7FB0C /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +328,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				437BE3911F89547B00F7FB0C /* ViewController.m in Sources */,
+				437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */,
+				D7AAA0F61F8E40E6003A7F6C /* ACProgressBarDisplayer.m in Sources */,
+				434886261F8A10A3007CC64F /* LGError.m in Sources */,
+				434886301F8A1A5C007CC64F /* NSMutableURLRequest+LGHTTP.m in Sources */,
+				434886331F8A1AF3007CC64F /* DCRequest.m in Sources */,
 				437BE39C1F89547B00F7FB0C /* main.m in Sources */,
+				4348861B1F897D18007CC64F /* DCRegViewController.m in Sources */,
+				4348862C1F8A19DF007CC64F /* NSDictionary+LGHTTP.m in Sources */,
 				437BE38E1F89547A00F7FB0C /* AppDelegate.m in Sources */,
+				434886221F8A105C007CC64F /* LGHTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,12 +487,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 328Q23T368;
 				INFOPLIST_FILE = diamondCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nsd.diamondCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -371,12 +503,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 328Q23T368;
 				INFOPLIST_FILE = diamondCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nsd.diamondCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
