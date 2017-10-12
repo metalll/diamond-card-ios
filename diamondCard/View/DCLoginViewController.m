@@ -50,6 +50,9 @@
     [self performSegueWithIdentifier:NSStringFromClass([DCRegViewController class])
                               sender:self];
 }
+- (IBAction)didTapLoginButton:(id)sender {
+    [self login];
+}
 
 - (void)login {
     [[[ACProgressBarDisplayer alloc] init] displayOnView:self.view
@@ -58,6 +61,8 @@
                                             andIndicator:YES
                                                 andFaded:NO];
     DCRequest * request = [[DCRequest alloc] initLoginRequestWithLogin:self.loginField.text password:self.passwordField.text];
+    
+    __typeof__(self) __weak weakSelf = self;
     
     NSURLSessionTask * task = [[LGHTTPClient sharedInstance] loadWithRequest:request callback:^(LGError *clientError, NSData *requestData) {
         
@@ -82,8 +87,9 @@
                     
                     NSDictionary * jsonDic = [NSJSONSerialization JSONObjectWithData:requestData options:0 error:nil];
                     NSLog(@"json %@",jsonDic);
-                                                                                      
-                                                                                      
+                 
+                    [weakSelf performSegueWithIdentifier:@"LGRoleBuyer" sender:nil];
+                    
                 }];
                 
             }

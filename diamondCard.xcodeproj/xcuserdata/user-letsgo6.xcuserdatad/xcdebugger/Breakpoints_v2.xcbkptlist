@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "diamondCard/View/DCLoginViewController.m"
-            timestampString = "529425104.842926"
+            timestampString = "529507379.741445"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "-login"
             landmarkType = "7">
          </BreakpointContent>

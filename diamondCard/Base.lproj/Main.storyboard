@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,7 +43,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3JL-Tg-wlI">
                                 <rect key="frame" x="50" y="378" width="275" height="35"/>
@@ -51,7 +52,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESd-BP-bgR">
                                 <rect key="frame" x="152" y="435" width="70" height="42"/>
@@ -59,6 +60,9 @@
                                 <state key="normal" title="Войти">
                                     <color key="titleColor" red="0.9771653548" green="1" blue="0.95674470810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MG5-hP-LZb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нет аккаунта? Нажмите здесь для регистации" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aE7-0r-exI">
                                 <rect key="frame" x="50.5" y="620.5" width="275" height="14.5"/>
@@ -102,7 +106,7 @@
                         <outlet property="passwordField" destination="3JL-Tg-wlI" id="UHx-eo-QrN"/>
                         <outlet property="regLabel" destination="aE7-0r-exI" id="W2v-qP-ozh"/>
                         <segue destination="VH2-mS-dHc" kind="show" identifier="DCRegViewController" id="7Zf-Xx-xIh"/>
-                        <segue destination="cWu-f4-EI9" kind="show" id="LJ0-hO-cnW"/>
+                        <segue destination="cWu-f4-EI9" kind="show" identifier="LGRoleBuyer" id="LJ0-hO-cnW"/>
                         <segue destination="kj6-zV-voP" kind="show" id="1R2-La-pin"/>
                     </connections>
                 </viewController>
@@ -133,14 +137,25 @@
                     <view key="view" contentMode="scaleToFill" id="aWG-G3-1kK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr-code" translatesAutoresizingMaskIntoConstraints="NO" id="NQ6-uf-d1I">
+                                <rect key="frame" x="20" y="120" width="335" height="253"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NQ6-uf-d1I" firstAttribute="leading" secondItem="Jjo-DX-cqp" secondAttribute="leading" constant="20" id="OD9-gl-EBr"/>
+                            <constraint firstItem="NQ6-uf-d1I" firstAttribute="top" secondItem="Jjo-DX-cqp" secondAttribute="top" constant="100" id="Rtd-Vq-18d"/>
+                            <constraint firstItem="Jjo-DX-cqp" firstAttribute="trailing" secondItem="NQ6-uf-d1I" secondAttribute="trailing" constant="20" id="sd2-Mv-hju"/>
+                            <constraint firstItem="Jjo-DX-cqp" firstAttribute="bottom" secondItem="NQ6-uf-d1I" secondAttribute="bottom" constant="245" id="ysX-6g-ev3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Jjo-DX-cqp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="GRu-Px-Nf9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSZ-xp-5ac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-274" y="1779"/>
+            <point key="canvasLocation" x="-274.39999999999998" y="1778.8605697151427"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="wDr-KV-Orx">
@@ -228,5 +243,6 @@
     </scenes>
     <resources>
         <image name="diamond_big" width="1920" height="1200"/>
+        <image name="qr-code" width="370" height="370"/>
     </resources>
 </document>
