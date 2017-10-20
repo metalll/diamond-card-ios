@@ -80,7 +80,7 @@
                                                          withMessage:@"Вход..."
                                                             andColor:[UIColor greenColor]
                                                         andIndicator:YES
-                                                            andFaded:YES];
+                                                            andFaded:NO];
                 
                 
                 DCRequest * request1 = [[DCRequest alloc] initRequetCurrentUserAuthRole];
@@ -101,7 +101,7 @@
                         [biometricFacade enableAuthenticationForFeature:@"My secure feature" succesBlock:^{
                             
                         } failureBlock:^(NSError * _Nonnull error) {
-                        
+                            
                         }];
                         
                         
@@ -109,11 +109,11 @@
                         
                         [biometricFacade authenticateForAccessToFeature:@"My secure feature" withReason:@"Подвердите вашу личность" succesBlock:^{
                             // Access granted
-                              [LGUserData sharedInstance].basUser = [jsonDic[@"data"] firstObject];
+                            [LGUserData sharedInstance].basUser = [jsonDic[@"data"] firstObject];
                             [weakSelf performSegueWithIdentifier:@"LGRoleBuyer" sender:jsonDic];
                         } failureBlock:^(NSError *error) {
                             // Access denied
-                                NSLog(@"error %@",error);
+                            NSLog(@"error %@",error);
                             [[[ACProgressBarDisplayer alloc] init] displayOnView:self.view
                                                                      withMessage:@"Ошибка подтверждения!"
                                                                         andColor:[UIColor redColor]
@@ -129,9 +129,9 @@
                     }
                     
                     if([[jsonDic[@"data"] lastObject] isEqualToString:@"ROLE_CONTR_AGENT"]) {
-                      
-                   
-
+                        
+                        
+                        
                         
                         VPBiometricAuthenticationFacade *biometricFacade = [[VPBiometricAuthenticationFacade alloc] init];
                         
@@ -142,7 +142,7 @@
                             
                         }];
                         
-                       
+                        
                         
                         
                         [biometricFacade authenticateForAccessToFeature:@"My secure feature" withReason:@"Подвердите вашу личность" succesBlock:^{
@@ -156,18 +156,18 @@
                                                                     andIndicator:NO
                                                                         andFaded:YES];
                         }];
-                     
                         
-                
+                        
+                        
+                        
+                        
+                        
+                    }
                     
-            
-                    
-            }
-                
                 }];
-        
+                
             } } }];
-        
+    
     
 }
 
