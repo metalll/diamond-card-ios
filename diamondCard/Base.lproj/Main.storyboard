@@ -10,6 +10,46 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Puscare View Controller-->
+        <scene sceneID="jSf-uX-Ltr">
+            <objects>
+                <viewController storyboardIdentifier="PuscareViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tgq-lK-eWb" customClass="PuscareViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Ev-15-isD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZz-lD-PGy">
+                                <rect key="frame" x="122.5" y="232" width="130" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="1CS-02-zLC"/>
+                                    <constraint firstAttribute="height" constant="50" id="RCV-Mr-i94"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sm-7e-gmL">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Ok"/>
+                                <connections>
+                                    <action selector="didTapOk:" destination="Tgq-lK-eWb" eventType="touchUpInside" id="zbN-tm-dMc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3sm-7e-gmL" firstAttribute="centerX" secondItem="XZz-lD-PGy" secondAttribute="centerX" id="3u1-l0-mha"/>
+                            <constraint firstItem="XZz-lD-PGy" firstAttribute="centerX" secondItem="UuV-46-zNH" secondAttribute="centerX" id="Zao-kP-Qeg"/>
+                            <constraint firstItem="XZz-lD-PGy" firstAttribute="top" secondItem="UuV-46-zNH" secondAttribute="top" constant="212" id="a4b-zC-fo0"/>
+                            <constraint firstItem="3sm-7e-gmL" firstAttribute="top" secondItem="XZz-lD-PGy" secondAttribute="bottom" constant="36" id="sAK-8C-2Cf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UuV-46-zNH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Di-Ef-XUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3312" y="-1860"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="LaB-Wc-RVD">
             <objects>

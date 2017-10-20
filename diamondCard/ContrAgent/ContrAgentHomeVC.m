@@ -7,17 +7,32 @@
 //
 
 #import "ContrAgentHomeVC.h"
+#import <QRCodeReaderViewController.h>
+#import "PuscareViewController.h"
 
-@interface ContrAgentHomeVC ()
+@interface ContrAgentHomeVC () <QRCodeReaderDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *corpName;
-
+@property (strong,nonatomic) QRCodeReader *reader;
+@property (strong,nonatomic) QRCodeReaderViewController *vc;
 @end
 
 @implementation ContrAgentHomeVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+ 
+    _reader = [QRCodeReader readerWithMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
+    
+    // Instantiate the view controller
+    _vc = [QRCodeReaderViewController readerWithCancelButtonTitle:@"Отменить" codeReader:_reader startScanningAtLoad:YES showSwitchCameraButton:YES showTorchButton:YES];
+    
+    // Set the presentation style
+    _vc.modalPresentationStyle = UIModalPresentationFormSheet;
+    
+    // Define the delegate receiver
+    _vc.delegate = self;
+    
+  
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,7 +40,26 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)toScan:(id)sender {
+    [self presentViewController:_vc animated:YES completion:NULL];
 }
+
+#pragma mark - QRCodeReader Delegate Methods
+
+- (void)reader:(QRCodeReaderViewController *)reader didScanResult:(NSString *)result
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+        [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"PuscareViewController"] animated:NO];
+        
+    }];
+}
+
+- (void)readerDidCancel:(QRCodeReaderViewController *)reader
+{
+    [self dismissViewControllerAnimated:NO completion:NULL];
+    
+}
+
 
 /*
 #pragma mark - Navigation

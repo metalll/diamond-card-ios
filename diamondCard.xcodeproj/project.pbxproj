@@ -31,6 +31,7 @@
 		D71AFC921F9A0D88000A44C9 /* LGQrHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC911F9A0D88000A44C9 /* LGQrHomeVC.m */; };
 		D71AFC951F9A0ED8000A44C9 /* LGUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC941F9A0ED8000A44C9 /* LGUserData.m */; };
 		D71AFC991F9A234A000A44C9 /* ContrAgentHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC981F9A234A000A44C9 /* ContrAgentHomeVC.m */; };
+		D71AFC9C1F9A46F5000A44C9 /* PuscareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC9B1F9A46F5000A44C9 /* PuscareViewController.m */; };
 		D7AAA0F61F8E40E6003A7F6C /* ACProgressBarDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AAA0F51F8E40E6003A7F6C /* ACProgressBarDisplayer.m */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,8 @@
 		D71AFC941F9A0ED8000A44C9 /* LGUserData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGUserData.m; sourceTree = "<group>"; };
 		D71AFC971F9A234A000A44C9 /* ContrAgentHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContrAgentHomeVC.h; sourceTree = "<group>"; };
 		D71AFC981F9A234A000A44C9 /* ContrAgentHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContrAgentHomeVC.m; sourceTree = "<group>"; };
+		D71AFC9A1F9A46F5000A44C9 /* PuscareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PuscareViewController.h; sourceTree = "<group>"; };
+		D71AFC9B1F9A46F5000A44C9 /* PuscareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuscareViewController.m; sourceTree = "<group>"; };
 		D7AAA0F41F8E40E6003A7F6C /* ACProgressBarDisplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACProgressBarDisplayer.h; sourceTree = "<group>"; };
 		D7AAA0F51F8E40E6003A7F6C /* ACProgressBarDisplayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACProgressBarDisplayer.m; sourceTree = "<group>"; };
 		FEF3457CE4324F07772946ED /* libPods-diamondCardTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diamondCardTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +194,8 @@
 		437BE3801F89547900F7FB0C = {
 			isa = PBXGroup;
 			children = (
+				D71AFC9A1F9A46F5000A44C9 /* PuscareViewController.h */,
+				D71AFC9B1F9A46F5000A44C9 /* PuscareViewController.m */,
 				D71AFC891F9A0CCD000A44C9 /* QRCodeGenerator.h */,
 				D71AFC8A1F9A0CCD000A44C9 /* QRCodeGenerator.m */,
 				D71AFC861F9A0BDE000A44C9 /* CIColor+QRCode.h */,
@@ -448,7 +453,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9B3E5897B81F258E5BDAB93F /* [CP] Embed Pods Frameworks */ = {
@@ -481,7 +486,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FFACB81D8441E32F1C124BFA /* [CP] Embed Pods Frameworks */ = {
@@ -514,6 +519,7 @@
 				D71AFC921F9A0D88000A44C9 /* LGQrHomeVC.m in Sources */,
 				D71AFC881F9A0BDE000A44C9 /* CIColor+QRCode.m in Sources */,
 				434886261F8A10A3007CC64F /* LGError.m in Sources */,
+				D71AFC9C1F9A46F5000A44C9 /* PuscareViewController.m in Sources */,
 				434886301F8A1A5C007CC64F /* NSMutableURLRequest+LGHTTP.m in Sources */,
 				434886331F8A1AF3007CC64F /* DCRequest.m in Sources */,
 				D71AFC8B1F9A0CCD000A44C9 /* QRCodeGenerator.m in Sources */,
@@ -682,7 +688,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nsd.diamondCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -700,7 +706,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nsd.diamondCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

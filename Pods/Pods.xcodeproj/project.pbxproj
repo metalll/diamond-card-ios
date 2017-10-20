@@ -358,19 +358,19 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		459B015764BB68D9BC15024A3C1E8F24 /* Debug */ = {
+		2A294FFEFDF8B13832C28A3829432C1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2D8C5EE178DA7EEFEAD2F968C496BB52 /* QRCodeReaderViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -378,8 +378,9 @@
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 			};
-			name = Debug;
+			name = Release;
 		};
 		54FF8D7D3C1D7AFC070DFAFB0E1F04C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -404,7 +405,31 @@
 			};
 			name = Debug;
 		};
-		643C76AA582046977B7877822ED7A258 /* Debug */ = {
+		6CAFB39DE69138E654B22DA3FEB5C140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8C5EE178DA7EEFEAD2F968C496BB52 /* QRCodeReaderViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -448,6 +473,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -542,29 +568,6 @@
 			};
 			name = Release;
 		};
-		CFAB38521756321D65B309ADE56C0657 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D8C5EE178DA7EEFEAD2F968C496BB52 /* QRCodeReaderViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		D7624F06355291D2AD96E5D688DAC1A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E1DE2E14699685E69B56A5B5DAB5A1F /* Pods-diamondCardTests.release.xcconfig */;
@@ -612,7 +615,7 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				643C76AA582046977B7877822ED7A258 /* Debug */,
+				9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */,
 				C03B8870130C98D1B02B59D003687524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -621,8 +624,8 @@
 		BCA67E4FAD17C786FDFACF5ECC20713B /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				459B015764BB68D9BC15024A3C1E8F24 /* Debug */,
-				CFAB38521756321D65B309ADE56C0657 /* Release */,
+				6CAFB39DE69138E654B22DA3FEB5C140 /* Debug */,
+				2A294FFEFDF8B13832C28A3829432C1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
