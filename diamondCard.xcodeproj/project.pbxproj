@@ -22,6 +22,15 @@
 		437BE39C1F89547B00F7FB0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE39B1F89547B00F7FB0C /* main.m */; };
 		437BE3A61F89547B00F7FB0C /* diamondCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3A51F89547B00F7FB0C /* diamondCardTests.m */; };
 		437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3B31F8954BF00F7FB0C /* DCLoginViewController.m */; };
+		AEF38FED1D2B7DC4D226130A /* libPods-diamondCard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0CBC7E332C75D8DD20EEF3 /* libPods-diamondCard.a */; };
+		C645CD77C2DD75CFA550E702 /* libPods-diamondCardTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF3457CE4324F07772946ED /* libPods-diamondCardTests.a */; };
+		D71AFC831F9A03BB000A44C9 /* VPBiometricAuthenticationFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC821F9A03BB000A44C9 /* VPBiometricAuthenticationFacade.m */; };
+		D71AFC851F9A0BC2000A44C9 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71AFC841F9A0BC2000A44C9 /* CoreImage.framework */; };
+		D71AFC881F9A0BDE000A44C9 /* CIColor+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC871F9A0BDE000A44C9 /* CIColor+QRCode.m */; };
+		D71AFC8B1F9A0CCD000A44C9 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC8A1F9A0CCD000A44C9 /* QRCodeGenerator.m */; };
+		D71AFC921F9A0D88000A44C9 /* LGQrHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC911F9A0D88000A44C9 /* LGQrHomeVC.m */; };
+		D71AFC951F9A0ED8000A44C9 /* LGUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC941F9A0ED8000A44C9 /* LGUserData.m */; };
+		D71AFC991F9A234A000A44C9 /* ContrAgentHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC981F9A234A000A44C9 /* ContrAgentHomeVC.m */; };
 		D7AAA0F61F8E40E6003A7F6C /* ACProgressBarDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AAA0F51F8E40E6003A7F6C /* ACProgressBarDisplayer.m */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A56642DE956BB8EEE51C8E /* Pods-diamondCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diamondCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-diamondCard/Pods-diamondCard.debug.xcconfig"; sourceTree = "<group>"; };
+		2311C9A028DE6C82F418B758 /* Pods-diamondCardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diamondCardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-diamondCardTests/Pods-diamondCardTests.release.xcconfig"; sourceTree = "<group>"; };
 		434886121F896D9F007CC64F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		434886191F897D18007CC64F /* DCRegViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCRegViewController.h; sourceTree = "<group>"; };
 		4348861A1F897D18007CC64F /* DCRegViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCRegViewController.m; sourceTree = "<group>"; };
@@ -67,8 +78,25 @@
 		437BE3B21F8954BF00F7FB0C /* DCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCLoginViewController.h; sourceTree = "<group>"; };
 		437BE3B31F8954BF00F7FB0C /* DCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCLoginViewController.m; sourceTree = "<group>"; };
 		437BE3B61F895D3200F7FB0C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6CED2BC7B7FE237F67A58935 /* Pods-diamondCardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diamondCardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-diamondCardTests/Pods-diamondCardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F9902B8206D0D23137B4544 /* Pods-diamondCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diamondCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-diamondCard/Pods-diamondCard.release.xcconfig"; sourceTree = "<group>"; };
+		8E0CBC7E332C75D8DD20EEF3 /* libPods-diamondCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diamondCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D71AFC811F9A03BB000A44C9 /* VPBiometricAuthenticationFacade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VPBiometricAuthenticationFacade.h; sourceTree = "<group>"; };
+		D71AFC821F9A03BB000A44C9 /* VPBiometricAuthenticationFacade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPBiometricAuthenticationFacade.m; sourceTree = "<group>"; };
+		D71AFC841F9A0BC2000A44C9 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D71AFC861F9A0BDE000A44C9 /* CIColor+QRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CIColor+QRCode.h"; sourceTree = "<group>"; };
+		D71AFC871F9A0BDE000A44C9 /* CIColor+QRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CIColor+QRCode.m"; sourceTree = "<group>"; };
+		D71AFC891F9A0CCD000A44C9 /* QRCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		D71AFC8A1F9A0CCD000A44C9 /* QRCodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		D71AFC901F9A0D88000A44C9 /* LGQrHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGQrHomeVC.h; sourceTree = "<group>"; };
+		D71AFC911F9A0D88000A44C9 /* LGQrHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGQrHomeVC.m; sourceTree = "<group>"; };
+		D71AFC931F9A0ED8000A44C9 /* LGUserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGUserData.h; sourceTree = "<group>"; };
+		D71AFC941F9A0ED8000A44C9 /* LGUserData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGUserData.m; sourceTree = "<group>"; };
+		D71AFC971F9A234A000A44C9 /* ContrAgentHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContrAgentHomeVC.h; sourceTree = "<group>"; };
+		D71AFC981F9A234A000A44C9 /* ContrAgentHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContrAgentHomeVC.m; sourceTree = "<group>"; };
 		D7AAA0F41F8E40E6003A7F6C /* ACProgressBarDisplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACProgressBarDisplayer.h; sourceTree = "<group>"; };
 		D7AAA0F51F8E40E6003A7F6C /* ACProgressBarDisplayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACProgressBarDisplayer.m; sourceTree = "<group>"; };
+		FEF3457CE4324F07772946ED /* libPods-diamondCardTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diamondCardTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71AFC851F9A0BC2000A44C9 /* CoreImage.framework in Frameworks */,
 				434886181F896E1D007CC64F /* WebKit.framework in Frameworks */,
+				AEF38FED1D2B7DC4D226130A /* libPods-diamondCard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +114,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C645CD77C2DD75CFA550E702 /* libPods-diamondCardTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		259F174D56B36B70B83493B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00A56642DE956BB8EEE51C8E /* Pods-diamondCard.debug.xcconfig */,
+				7F9902B8206D0D23137B4544 /* Pods-diamondCard.release.xcconfig */,
+				6CED2BC7B7FE237F67A58935 /* Pods-diamondCardTests.debug.xcconfig */,
+				2311C9A028DE6C82F418B758 /* Pods-diamondCardTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4348861C1F8A06EF007CC64F /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,10 +191,17 @@
 		437BE3801F89547900F7FB0C = {
 			isa = PBXGroup;
 			children = (
+				D71AFC891F9A0CCD000A44C9 /* QRCodeGenerator.h */,
+				D71AFC8A1F9A0CCD000A44C9 /* QRCodeGenerator.m */,
+				D71AFC861F9A0BDE000A44C9 /* CIColor+QRCode.h */,
+				D71AFC871F9A0BDE000A44C9 /* CIColor+QRCode.m */,
+				D71AFC811F9A03BB000A44C9 /* VPBiometricAuthenticationFacade.h */,
+				D71AFC821F9A03BB000A44C9 /* VPBiometricAuthenticationFacade.m */,
 				437BE38B1F89547A00F7FB0C /* diamondCard */,
 				437BE3A41F89547B00F7FB0C /* diamondCardTests */,
 				437BE38A1F89547A00F7FB0C /* Products */,
 				437BE3B51F895D3100F7FB0C /* Frameworks */,
+				259F174D56B36B70B83493B8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +217,8 @@
 		437BE38B1F89547A00F7FB0C /* diamondCard */ = {
 			isa = PBXGroup;
 			children = (
+				D71AFC961F9A200F000A44C9 /* ContrAgent */,
+				D71AFC8C1F9A0D60000A44C9 /* Buyer */,
 				434886231F8A108F007CC64F /* Entity */,
 				4348861C1F8A06EF007CC64F /* CustomView */,
 				437BE3B11F8954A400F7FB0C /* View */,
@@ -181,6 +232,8 @@
 				437BE3971F89547B00F7FB0C /* LaunchScreen.storyboard */,
 				437BE39A1F89547B00F7FB0C /* Info.plist */,
 				437BE39B1F89547B00F7FB0C /* main.m */,
+				D71AFC931F9A0ED8000A44C9 /* LGUserData.h */,
+				D71AFC941F9A0ED8000A44C9 /* LGUserData.m */,
 			);
 			path = diamondCard;
 			sourceTree = "<group>";
@@ -219,10 +272,31 @@
 		437BE3B51F895D3100F7FB0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D71AFC841F9A0BC2000A44C9 /* CoreImage.framework */,
 				434886121F896D9F007CC64F /* WebKit.framework */,
 				437BE3B61F895D3200F7FB0C /* MapKit.framework */,
+				8E0CBC7E332C75D8DD20EEF3 /* libPods-diamondCard.a */,
+				FEF3457CE4324F07772946ED /* libPods-diamondCardTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D71AFC8C1F9A0D60000A44C9 /* Buyer */ = {
+			isa = PBXGroup;
+			children = (
+				D71AFC901F9A0D88000A44C9 /* LGQrHomeVC.h */,
+				D71AFC911F9A0D88000A44C9 /* LGQrHomeVC.m */,
+			);
+			path = Buyer;
+			sourceTree = "<group>";
+		};
+		D71AFC961F9A200F000A44C9 /* ContrAgent */ = {
+			isa = PBXGroup;
+			children = (
+				D71AFC971F9A234A000A44C9 /* ContrAgentHomeVC.h */,
+				D71AFC981F9A234A000A44C9 /* ContrAgentHomeVC.m */,
+			);
+			path = ContrAgent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +306,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 437BE3AA1F89547B00F7FB0C /* Build configuration list for PBXNativeTarget "diamondCard" */;
 			buildPhases = (
+				7AF9C0D263925C4EFE79A481 /* [CP] Check Pods Manifest.lock */,
 				437BE3851F89547900F7FB0C /* Sources */,
 				437BE3861F89547900F7FB0C /* Frameworks */,
 				437BE3871F89547900F7FB0C /* Resources */,
+				FFACB81D8441E32F1C124BFA /* [CP] Embed Pods Frameworks */,
+				0CF3AEA652ACF3F4EDACC79D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,9 +326,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 437BE3AD1F89547B00F7FB0C /* Build configuration list for PBXNativeTarget "diamondCardTests" */;
 			buildPhases = (
+				F2AC82E4F66A82D4D1818403 /* [CP] Check Pods Manifest.lock */,
 				437BE39D1F89547B00F7FB0C /* Sources */,
 				437BE39E1F89547B00F7FB0C /* Frameworks */,
 				437BE39F1F89547B00F7FB0C /* Resources */,
+				9B3E5897B81F258E5BDAB93F /* [CP] Embed Pods Frameworks */,
+				71FF9B8A4BA38AD586E572E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,6 +402,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CF3AEA652ACF3F4EDACC79D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-diamondCard/Pods-diamondCard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71FF9B8A4BA38AD586E572E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-diamondCardTests/Pods-diamondCardTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AF9C0D263925C4EFE79A481 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-diamondCard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B3E5897B81F258E5BDAB93F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-diamondCardTests/Pods-diamondCardTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2AC82E4F66A82D4D1818403 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-diamondCardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFACB81D8441E32F1C124BFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-diamondCard/Pods-diamondCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		437BE3851F89547900F7FB0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -330,11 +509,17 @@
 				437BE3911F89547B00F7FB0C /* ViewController.m in Sources */,
 				437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */,
 				D7AAA0F61F8E40E6003A7F6C /* ACProgressBarDisplayer.m in Sources */,
+				D71AFC951F9A0ED8000A44C9 /* LGUserData.m in Sources */,
+				D71AFC991F9A234A000A44C9 /* ContrAgentHomeVC.m in Sources */,
+				D71AFC921F9A0D88000A44C9 /* LGQrHomeVC.m in Sources */,
+				D71AFC881F9A0BDE000A44C9 /* CIColor+QRCode.m in Sources */,
 				434886261F8A10A3007CC64F /* LGError.m in Sources */,
 				434886301F8A1A5C007CC64F /* NSMutableURLRequest+LGHTTP.m in Sources */,
 				434886331F8A1AF3007CC64F /* DCRequest.m in Sources */,
+				D71AFC8B1F9A0CCD000A44C9 /* QRCodeGenerator.m in Sources */,
 				437BE39C1F89547B00F7FB0C /* main.m in Sources */,
 				4348861B1F897D18007CC64F /* DCRegViewController.m in Sources */,
+				D71AFC831F9A03BB000A44C9 /* VPBiometricAuthenticationFacade.m in Sources */,
 				4348862C1F8A19DF007CC64F /* NSDictionary+LGHTTP.m in Sources */,
 				437BE38E1F89547A00F7FB0C /* AppDelegate.m in Sources */,
 				434886221F8A105C007CC64F /* LGHTTPClient.m in Sources */,
@@ -485,6 +670,7 @@
 		};
 		437BE3AB1F89547B00F7FB0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A56642DE956BB8EEE51C8E /* Pods-diamondCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -502,6 +688,7 @@
 		};
 		437BE3AC1F89547B00F7FB0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F9902B8206D0D23137B4544 /* Pods-diamondCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -519,6 +706,7 @@
 		};
 		437BE3AE1F89547B00F7FB0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CED2BC7B7FE237F67A58935 /* Pods-diamondCardTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +722,7 @@
 		};
 		437BE3AF1F89547B00F7FB0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2311C9A028DE6C82F418B758 /* Pods-diamondCardTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

@@ -12,6 +12,8 @@
 #import "LGHTTPClient.h"
 #import "DCRequest.h"
 #import "ACProgressBarDisplayer.h"
+#import "VPBiometricAuthenticationFacade.h"
+#import "LGUserData.h"
 
 @interface DCLoginViewController () <UITextFieldDelegate>
 
@@ -19,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *loginField;
 @property (weak, nonatomic) IBOutlet UILabel *regLabel;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (strong, nonatomic) NSURLSessionTask *task;
 @end
 
 @implementation DCLoginViewController
@@ -63,7 +66,6 @@
     DCRequest * request = [[DCRequest alloc] initLoginRequestWithLogin:self.loginField.text password:self.passwordField.text];
     
     __typeof__(self) __weak weakSelf = self;
-    
     NSURLSessionTask * task = [[LGHTTPClient sharedInstance] loadWithRequest:request callback:^(LGError *clientError, NSData *requestData) {
         
         NSString *responceStringData = [[NSString alloc] initWithData:requestData encoding:NSUTF8StringEncoding];
@@ -87,15 +89,89 @@
                     
                     NSDictionary * jsonDic = [NSJSONSerialization JSONObjectWithData:requestData options:0 error:nil];
                     NSLog(@"json %@",jsonDic);
-                 
-                    [weakSelf performSegueWithIdentifier:@"LGRoleBuyer" sender:nil];
                     
-                }];
+                    if([[jsonDic[@"data"] lastObject] isEqualToString:@"ROLE_BUYER"]) {
+                        
+                        
+                        
+                        
+                        VPBiometricAuthenticationFacade *biometricFacade = [[VPBiometricAuthenticationFacade alloc] init];
+                        
+                        
+                        [biometricFacade enableAuthenticationForFeature:@"My secure feature" succesBlock:^{
+                            
+                        } failureBlock:^(NSError * _Nonnull error) {
+                        
+                        }];
+                        
+                        
+                        
+                        
+                        [biometricFacade authenticateForAccessToFeature:@"My secure feature" withReason:@"Подвердите вашу личность" succesBlock:^{
+                            // Access granted
+                              [LGUserData sharedInstance].basUser = [jsonDic[@"data"] firstObject];
+                            [weakSelf performSegueWithIdentifier:@"LGRoleBuyer" sender:jsonDic];
+                        } failureBlock:^(NSError *error) {
+                            // Access denied
+                                NSLog(@"error %@",error);
+                            [[[ACProgressBarDisplayer alloc] init] displayOnView:self.view
+                                                                     withMessage:@"Ошибка подтверждения!"
+                                                                        andColor:[UIColor redColor]
+                                                                    andIndicator:NO
+                                                                        andFaded:YES];
+                        }];
+                        
+                        
+                        
+                        
+                        
+                        
+                    }
+                    
+                    if([[jsonDic[@"data"] lastObject] isEqualToString:@"ROLE_CONTR_AGENT"]) {
+                      
+                   
+
+                        
+                        VPBiometricAuthenticationFacade *biometricFacade = [[VPBiometricAuthenticationFacade alloc] init];
+                        
+                        
+                        [biometricFacade enableAuthenticationForFeature:@"My secure feature" succesBlock:^{
+                            
+                        } failureBlock:^(NSError * _Nonnull error) {
+                            
+                        }];
+                        
+                       
+                        
+                        
+                        [biometricFacade authenticateForAccessToFeature:@"My secure feature" withReason:@"Подвердите вашу личность" succesBlock:^{
+                            // Access granted
+                            [weakSelf performSegueWithIdentifier:@"LGRoleContrAgent" sender:jsonDic];
+                        } failureBlock:^(NSError *error) {
+                            // Access denied
+                            [[[ACProgressBarDisplayer alloc] init] displayOnView:self.view
+                                                                     withMessage:@"Ошибка подтверждения!"
+                                                                        andColor:[UIColor redColor]
+                                                                    andIndicator:NO
+                                                                        andFaded:YES];
+                        }];
+                     
+                        
                 
+                    
+            
+                    
             }
-        }
-    }];
+                
+                }];
+        
+            } } }];
+        
     
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
 }
 
