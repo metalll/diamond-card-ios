@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PuscareViewController : UIViewController
-
+@property (strong,nonatomic) NSString * cashbaskCard;
 @end

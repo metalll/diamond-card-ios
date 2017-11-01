@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,6 +45,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UuV-46-zNH"/>
                     </view>
+                    <connections>
+                        <outlet property="value" destination="XZz-lD-PGy" id="yd0-2d-t4h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Di-Ef-XUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +160,7 @@
         <!--Item 2-->
         <scene sceneID="OAQ-oS-mMA">
             <objects>
-                <viewController id="FEk-Hl-f0O" sceneMemberID="viewController">
+                <viewController id="FEk-Hl-f0O" customClass="UserOperationsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mjv-O7-pz1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,6 +180,9 @@
                         <viewLayoutGuide key="safeArea" id="bpJ-J0-nhT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="b2g-fp-NzF"/>
+                    <connections>
+                        <outlet property="table" destination="sQS-rO-Q4y" id="n0Q-cR-16z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MBM-Z6-z9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -271,7 +277,7 @@
         <!--Item 2-->
         <scene sceneID="wDr-KV-Orx">
             <objects>
-                <viewController id="ibM-Up-sYC" sceneMemberID="viewController">
+                <viewController id="ibM-Up-sYC" customClass="ContrAgentOperationsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gey-4P-L2k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -291,10 +297,13 @@
                         <viewLayoutGuide key="safeArea" id="5EP-ji-mGS"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="BsU-8t-onr"/>
+                    <connections>
+                        <outlet property="table" destination="nJ9-nq-hKM" id="coQ-MA-FUF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hr6-kH-Xj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1630" y="1779"/>
+            <point key="canvasLocation" x="-1662" y="1779"/>
         </scene>
         <!--Item-->
         <scene sceneID="l45-qc-cxo">

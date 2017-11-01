@@ -93,69 +93,69 @@
                     if([[jsonDic[@"data"] lastObject] isEqualToString:@"ROLE_BUYER"]) {
                         
                         
+                        [LGUserData sharedInstance].basUser = [jsonDic[@"data"] firstObject];
+                        [weakSelf performSegueWithIdentifier:@"LGRoleBuyer" sender:jsonDic];
                         
-                        
-                        VPBiometricAuthenticationFacade *biometricFacade = [[VPBiometricAuthenticationFacade alloc] init];
-                        
-                        
-                        [biometricFacade enableAuthenticationForFeature:@"My secure feature" succesBlock:^{
-                            
-                        } failureBlock:^(NSError * _Nonnull error) {
-                            
-                        }];
-                        
-                        
-                        
-                        
-                        [biometricFacade authenticateForAccessToFeature:@"My secure feature" withReason:@"Подвердите вашу личность" succesBlock:^{
-                            // Access granted
-                            [LGUserData sharedInstance].basUser = [jsonDic[@"data"] firstObject];
-                            [weakSelf performSegueWithIdentifier:@"LGRoleBuyer" sender:jsonDic];
-                        } failureBlock:^(NSError *error) {
-                            // Access denied
-                            NSLog(@"error %@",error);
-                            [[[ACProgressBarDisplayer alloc] init] displayOnView:self.view
-                                                                     withMessage:@"Ошибка подтверждения!"
-                                                                        andColor:[UIColor redColor]
-                                                                    andIndicator:NO
-                                                                        andFaded:YES];
-                        }];
-                        
-                        
-                        
-                        
+//                        VPBiometricAuthenticationFacade *biometricFacade = [[VPBiometricAuthenticationFacade alloc] init];
+//
+//
+//                        [biometricFacade enableAuthenticationForFeature:@"My secure feature" succesBlock:^{
+//
+//                        } failureBlock:^(NSError * _Nonnull error) {
+//
+//                        }];
+//
+//
+//
+//
+//                        [biometricFacade authenticateForAccessToFeature:@"My secure feature" withReason:@"Подвердите вашу личность" succesBlock:^{
+//                            // Access granted
+//
+//                        } failureBlock:^(NSError *error) {
+//                            // Access denied
+//                            NSLog(@"error %@",error);
+//                            [[[ACProgressBarDisplayer alloc] init] displayOnView:self.view
+//                                                                     withMessage:@"Ошибка подтверждения!"
+//                                                                        andColor:[UIColor redColor]
+//                                                                    andIndicator:NO
+//                                                                        andFaded:YES];
+//                        }];
+//
+//
+//
+//
                         
                         
                     }
                     
                     if([[jsonDic[@"data"] lastObject] isEqualToString:@"ROLE_CONTR_AGENT"]) {
-                        
-                        
-                        
-                        
-                        VPBiometricAuthenticationFacade *biometricFacade = [[VPBiometricAuthenticationFacade alloc] init];
-                        
-                        
-                        [biometricFacade enableAuthenticationForFeature:@"My secure feature" succesBlock:^{
-                            
-                        } failureBlock:^(NSError * _Nonnull error) {
-                            
-                        }];
-                        
-                        
-                        
-                        
-                        [biometricFacade authenticateForAccessToFeature:@"My secure feature" withReason:@"Подвердите вашу личность" succesBlock:^{
-                            // Access granted
+                           [LGUserData sharedInstance].basUser = [jsonDic[@"data"] firstObject];
                             [weakSelf performSegueWithIdentifier:@"LGRoleContrAgent" sender:jsonDic];
-                        } failureBlock:^(NSError *error) {
-                            // Access denied
-                            [[[ACProgressBarDisplayer alloc] init] displayOnView:self.view
-                                                                     withMessage:@"Ошибка подтверждения!"
-                                                                        andColor:[UIColor redColor]
-                                                                    andIndicator:NO
-                                                                        andFaded:YES];
-                        }];
+                        
+                        
+//                        VPBiometricAuthenticationFacade *biometricFacade = [[VPBiometricAuthenticationFacade alloc] init];
+//
+//
+//                        [biometricFacade enableAuthenticationForFeature:@"My secure feature" succesBlock:^{
+//
+//                        } failureBlock:^(NSError * _Nonnull error) {
+//
+//                        }];
+//
+//
+//
+//
+//                        [biometricFacade authenticateForAccessToFeature:@"My secure feature" withReason:@"Подвердите вашу личность" succesBlock:^{
+//                            // Access granted
+//
+//                        } failureBlock:^(NSError *error) {
+//                            // Access denied
+//                            [[[ACProgressBarDisplayer alloc] init] displayOnView:self.view
+//                                                                     withMessage:@"Ошибка подтверждения!"
+//                                                                        andColor:[UIColor redColor]
+//                                                                    andIndicator:NO
+//                                                                        andFaded:YES];
+//                        }];
                         
                         
                         

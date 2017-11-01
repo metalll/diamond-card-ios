@@ -7,8 +7,11 @@
 //
 
 #import "PuscareViewController.h"
+#import "DCCashbackRequest.h"
+#import "LGHTTPClient.h"
 
 @interface PuscareViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *value;
 
 @end
 
@@ -24,7 +27,20 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)didTapOk:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    __typeof__(self) __weak weakSelf = self;
+    [[LGHTTPClient sharedInstance] loadWithRequest:[[DCCashbackRequest alloc]initLoginRequestWithCashbackCardID:self.cashbaskCard andValue:self.value.text]  callback:^(LGError *clientError, NSData *requestData) {
+        
+        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:requestData options:0 error:nil];
+        
+        
+        [weakSelf.navigationController popViewControllerAnimated:YES];
+        
+        
+    }];
+    
+    
+    
+
 }
 
 /*

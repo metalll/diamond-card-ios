@@ -1,0 +1,14 @@
+//
+//  UserOperationsViewController.h
+//  diamondCard
+//
+//  Created by user-letsgo6 on 01.11.17.
+//  Copyright © 2017 NSD NULL. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UserOperationsViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *table;
+@property (strong,nonatomic) NSMutableArray *operations;
+@end

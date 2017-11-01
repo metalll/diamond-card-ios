@@ -24,6 +24,9 @@
 		437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3B31F8954BF00F7FB0C /* DCLoginViewController.m */; };
 		AEF38FED1D2B7DC4D226130A /* libPods-diamondCard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0CBC7E332C75D8DD20EEF3 /* libPods-diamondCard.a */; };
 		C645CD77C2DD75CFA550E702 /* libPods-diamondCardTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF3457CE4324F07772946ED /* libPods-diamondCardTests.a */; };
+		D718EDB51FAA15E100AB5CEC /* DCCashbackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D718EDB41FAA15E100AB5CEC /* DCCashbackRequest.m */; };
+		D718EDB81FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D718EDB71FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.m */; };
+		D718EDBB1FAA22D500AB5CEC /* UserOperationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D718EDBA1FAA22D500AB5CEC /* UserOperationsViewController.m */; };
 		D71AFC831F9A03BB000A44C9 /* VPBiometricAuthenticationFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC821F9A03BB000A44C9 /* VPBiometricAuthenticationFacade.m */; };
 		D71AFC851F9A0BC2000A44C9 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71AFC841F9A0BC2000A44C9 /* CoreImage.framework */; };
 		D71AFC881F9A0BDE000A44C9 /* CIColor+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC871F9A0BDE000A44C9 /* CIColor+QRCode.m */; };
@@ -82,6 +85,12 @@
 		6CED2BC7B7FE237F67A58935 /* Pods-diamondCardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diamondCardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-diamondCardTests/Pods-diamondCardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F9902B8206D0D23137B4544 /* Pods-diamondCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diamondCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-diamondCard/Pods-diamondCard.release.xcconfig"; sourceTree = "<group>"; };
 		8E0CBC7E332C75D8DD20EEF3 /* libPods-diamondCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diamondCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D718EDB31FAA15E100AB5CEC /* DCCashbackRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCCashbackRequest.h; sourceTree = "<group>"; };
+		D718EDB41FAA15E100AB5CEC /* DCCashbackRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCCashbackRequest.m; sourceTree = "<group>"; };
+		D718EDB61FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContrAgentOperationsViewController.h; sourceTree = "<group>"; };
+		D718EDB71FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContrAgentOperationsViewController.m; sourceTree = "<group>"; };
+		D718EDB91FAA22D500AB5CEC /* UserOperationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserOperationsViewController.h; sourceTree = "<group>"; };
+		D718EDBA1FAA22D500AB5CEC /* UserOperationsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserOperationsViewController.m; sourceTree = "<group>"; };
 		D71AFC811F9A03BB000A44C9 /* VPBiometricAuthenticationFacade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VPBiometricAuthenticationFacade.h; sourceTree = "<group>"; };
 		D71AFC821F9A03BB000A44C9 /* VPBiometricAuthenticationFacade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPBiometricAuthenticationFacade.m; sourceTree = "<group>"; };
 		D71AFC841F9A0BC2000A44C9 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -149,6 +158,8 @@
 			children = (
 				434886311F8A1AF3007CC64F /* DCRequest.h */,
 				434886321F8A1AF3007CC64F /* DCRequest.m */,
+				D718EDB31FAA15E100AB5CEC /* DCCashbackRequest.h */,
+				D718EDB41FAA15E100AB5CEC /* DCCashbackRequest.m */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -194,6 +205,10 @@
 		437BE3801F89547900F7FB0C = {
 			isa = PBXGroup;
 			children = (
+				D718EDB91FAA22D500AB5CEC /* UserOperationsViewController.h */,
+				D718EDBA1FAA22D500AB5CEC /* UserOperationsViewController.m */,
+				D718EDB61FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.h */,
+				D718EDB71FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.m */,
 				D71AFC9A1F9A46F5000A44C9 /* PuscareViewController.h */,
 				D71AFC9B1F9A46F5000A44C9 /* PuscareViewController.m */,
 				D71AFC891F9A0CCD000A44C9 /* QRCodeGenerator.h */,
@@ -512,12 +527,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				437BE3911F89547B00F7FB0C /* ViewController.m in Sources */,
+				D718EDBB1FAA22D500AB5CEC /* UserOperationsViewController.m in Sources */,
 				437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */,
 				D7AAA0F61F8E40E6003A7F6C /* ACProgressBarDisplayer.m in Sources */,
 				D71AFC951F9A0ED8000A44C9 /* LGUserData.m in Sources */,
 				D71AFC991F9A234A000A44C9 /* ContrAgentHomeVC.m in Sources */,
 				D71AFC921F9A0D88000A44C9 /* LGQrHomeVC.m in Sources */,
 				D71AFC881F9A0BDE000A44C9 /* CIColor+QRCode.m in Sources */,
+				D718EDB51FAA15E100AB5CEC /* DCCashbackRequest.m in Sources */,
 				434886261F8A10A3007CC64F /* LGError.m in Sources */,
 				D71AFC9C1F9A46F5000A44C9 /* PuscareViewController.m in Sources */,
 				434886301F8A1A5C007CC64F /* NSMutableURLRequest+LGHTTP.m in Sources */,
@@ -529,6 +546,7 @@
 				4348862C1F8A19DF007CC64F /* NSDictionary+LGHTTP.m in Sources */,
 				437BE38E1F89547A00F7FB0C /* AppDelegate.m in Sources */,
 				434886221F8A105C007CC64F /* LGHTTPClient.m in Sources */,
+				D718EDB81FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

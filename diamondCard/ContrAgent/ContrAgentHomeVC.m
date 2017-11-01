@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *corpName;
 @property (strong,nonatomic) QRCodeReader *reader;
 @property (strong,nonatomic) QRCodeReaderViewController *vc;
+
+@property (strong,nonatomic) NSString *lastScanResult;
 @end
 
 @implementation ContrAgentHomeVC
@@ -48,8 +50,10 @@
 - (void)reader:(QRCodeReaderViewController *)reader didScanResult:(NSString *)result
 {
     [self dismissViewControllerAnimated:YES completion:^{
-        
-        [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"PuscareViewController"] animated:NO];
+        self.lastScanResult = result;
+        PuscareViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"PuscareViewController"];
+        vc.cashbaskCard = result;
+        [self.navigationController pushViewController:vc animated:NO];
         
     }];
 }
