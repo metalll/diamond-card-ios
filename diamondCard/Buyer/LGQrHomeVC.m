@@ -11,6 +11,8 @@
 #import "LGUserData.h"
 
 @interface LGQrHomeVC ()
+@property (weak, nonatomic) IBOutlet UILabel *balance;
+@property (weak, nonatomic) IBOutlet UILabel *shadow;
 @property (weak, nonatomic) IBOutlet UIImageView *qrImageView;
 @end
 
@@ -19,6 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadQr];
+    self.balance.text = s;
+    self.shadow.text = @"";
+    
+    
+    
     // Do any additional setup after loading the view.
 }
 

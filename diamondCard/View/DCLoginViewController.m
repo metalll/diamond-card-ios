@@ -90,7 +90,7 @@
                     NSDictionary * jsonDic = [NSJSONSerialization JSONObjectWithData:requestData options:0 error:nil];
                     NSLog(@"json %@",jsonDic);
                     
-                    if([[jsonDic[@"data"] lastObject] isEqualToString:@"ROLE_BUYER"]) {
+                    if([jsonDic[@"data"][1] isEqualToString:@"ROLE_BUYER"]) {
                         
                         
                         [LGUserData sharedInstance].basUser = [jsonDic[@"data"] firstObject];
@@ -128,7 +128,7 @@
                         
                     }
                     
-                    if([[jsonDic[@"data"] lastObject] isEqualToString:@"ROLE_CONTR_AGENT"]) {
+                    if([jsonDic[@"data"][1] isEqualToString:@"ROLE_CONTR_AGENT"]) {
                            [LGUserData sharedInstance].basUser = [jsonDic[@"data"] firstObject];
                             [weakSelf performSegueWithIdentifier:@"LGRoleContrAgent" sender:jsonDic];
                         
