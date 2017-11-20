@@ -67,7 +67,7 @@
 - (IBAction)logout:(id)sender {
     
     [self.navigationController popToRootViewControllerAnimated:YES];
-    
+    [[LGUserData sharedInstance] logout];
 }
 
 - (void)didReceiveMemoryWarning {

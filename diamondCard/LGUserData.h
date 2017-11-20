@@ -12,10 +12,12 @@
 
 @property(strong,nonatomic) NSDictionary * baseUser;
 @property(strong,nonatomic) NSDictionary * userInfo;
+@property(strong,nonatomic) NSString *userRole;
 +(instancetype) sharedInstance;
 - (void)updateDataWithCallback:(void (^)(void))callback;
 - (void)saveWithName:(NSString *)name pass:(NSString *)pass;
 - (void)loadUserOfflineUser;
 - (NSDictionary *)creditalsForStoredUser;
 - (BOOL)hasUser;
+- (void)logout;
 @end

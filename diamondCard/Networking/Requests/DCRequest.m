@@ -60,4 +60,19 @@ NSString * const DCCurrentUser = @"https://diamond-card.herokuapp.com/auth";
     return [_request copy];
 }
 
+- (instancetype)initLogout {
+    self = [super init];
+    if (!self) {
+        return self;
+    }
+    
+    
+    NSMutableURLRequest * loginRequest = [NSMutableURLRequest new];
+    loginRequest.HTTPMethod = @"GET";
+    loginRequest.URL = [NSURL URLWithString:@"https://diamond-card.herokuapp.com/logout"];
+    self.request = loginRequest;
+    
+    return self;
+}
+
 @end

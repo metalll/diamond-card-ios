@@ -16,4 +16,5 @@
 
 - (instancetype)initRequetCurrentUserAuthRole;
 
+- (instancetype)initLogout;
 @end

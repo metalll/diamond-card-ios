@@ -15,6 +15,8 @@
 #import "VPBiometricAuthenticationFacade.h"
 #import "LGUserData.h"
 #import "LGKeychain.h"
+#import "LGReachibility.h"
+
 
 @interface DCLoginViewController () <UITextFieldDelegate>
 
@@ -60,10 +62,27 @@
         
         self.loginField.text = dic[@"username"];
         self.passwordField.text = dic[@"password"];
+       
+        
+        if (![LGReachability isBaseReach]) {
+             [[LGUserData sharedInstance] loadUserOfflineUser];
+            
+            if([[LGUserData sharedInstance].userRole isEqualToString:@"ROLE_BUYER"]) {
+                [self performSegueWithIdentifier:@"LGRoleBuyer" sender:self];
+            }else {
+                 // [self performSegueWithIdentifier:@"LGRoleBuyer" sender:self];
+            }
+        }
         
         [self login];
         
     }
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    self.loginField.text = @"";
+    self.passwordField.text = @"";
 }
 
 
@@ -189,7 +208,7 @@
                     
                     if([jsonDic[@"data"][1] isEqualToString:@"ROLE_BUYER"]) {
                         
-                        
+                        [LGUserData sharedInstance].userRole = jsonDic[@"data"][1];
                         [LGUserData sharedInstance].baseUser = [jsonDic[@"data"] firstObject];
                         [LGUserData sharedInstance].userInfo = [jsonDic[@"data"] objectAtIndex:2];
                         [[LGUserData sharedInstance] saveWithName:weakSelf.loginField.text pass:weakSelf.passwordField.text];

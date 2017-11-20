@@ -28,12 +28,16 @@ static LGUserData *data;
     return data;
 }
 
+
+
 - (void)updateDataWithCallback:(void (^)(void))callback {
     
     DCRequest * request1 = [[DCRequest alloc] initRequetCurrentUserAuthRole];
     __typeof__(self) __weak weakSelf = self;
     [[LGHTTPClient sharedInstance] loadWithRequest:request1 callback:^(LGError *clientError, NSData *requestData){
-        
+        if (clientError!=nil) {
+            return ;
+        }
         NSDictionary * jsonDic = [NSJSONSerialization JSONObjectWithData:requestData options:0 error:nil];
         NSLog(@"json %@",jsonDic);
         
@@ -42,6 +46,7 @@ static LGUserData *data;
             
             weakSelf.baseUser = [jsonDic[@"data"] firstObject];
             weakSelf.userInfo = [jsonDic[@"data"] objectAtIndex:2];
+            
             if (callback) {
                 callback();
             }
@@ -56,6 +61,7 @@ static LGUserData *data;
     [[LGKeychain defaultKeychain] storeUsername:name password:pass identifier:keychainName info:@{
                                                                                                   @"A":self.baseUser,
                                                                                                   @"B":self.userInfo,
+                                                                                                  @"C":self.userRole
                                                                                                   } forService:keychainName];
 }
 
@@ -64,8 +70,25 @@ static LGUserData *data;
     
     self.baseUser = userInfoDic[@"info"][@"A"];
     self.userInfo = userInfoDic[@"info"][@"B"];
+    self.userRole = userInfoDic[@"info"][@"C"];
     
     NSLog(@"");
+}
+
+- (void)logout {
+    [[LGHTTPClient sharedInstance] loadWithRequest:[[DCRequest alloc] initLogout] callback:^(LGError *clientError, NSData *requestData) {
+        
+    }];
+    self.baseUser = nil;
+    self.userInfo = nil;
+    self.userRole = nil;
+    NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    for (NSHTTPCookie *each in cookieStorage.cookies) {
+        [cookieStorage deleteCookie:each];
+    }
+    
+    [[LGKeychain defaultKeychain] deleteAllCredentialsForService:keychainName];
+    
 }
 
 - (NSDictionary *)creditalsForStoredUser {
