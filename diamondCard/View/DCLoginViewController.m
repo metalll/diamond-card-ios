@@ -17,7 +17,6 @@
 #import "LGKeychain.h"
 #import "LGReachibility.h"
 
-
 @interface DCLoginViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraint;
