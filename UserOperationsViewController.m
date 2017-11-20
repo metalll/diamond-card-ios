@@ -23,7 +23,14 @@
         NSDictionary *respDic = [NSJSONSerialization JSONObjectWithData:requestData options:0 error:nil];
         NSLog(@"resp dic %@",respDic);
         
-        self.operations = respDic[@"data"][0];
+        NSArray * tArray = respDic[@"data"][0];
+        
+        self.operations = [NSMutableArray new];
+        
+        for (id obj in [tArray reverseObjectEnumerator]) {
+            [self.operations addObject:obj];
+        }
+        
         
         [self.table reloadData];
     }];
