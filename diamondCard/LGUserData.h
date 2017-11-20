@@ -10,7 +10,8 @@
 
 @interface LGUserData : NSObject
 
-@property(strong,nonatomic) NSDictionary * basUser;
-
+@property(strong,nonatomic) NSDictionary * baseUser;
+@property(strong,nonatomic) NSDictionary * userInfo;
 +(instancetype) sharedInstance;
+- (void)updateDataWithCallback:(void (^)(void))callback;
 @end

@@ -9,6 +9,8 @@
 #import "UserOperationsViewController.h"
 #import "DCCashbackRequest.h"
 #import "LGHTTPClient.h"
+#import "NSDBuyerOperationCell.h"
+
 
 @interface UserOperationsViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -33,6 +35,7 @@
     self.table.delegate = self;
     self.table.dataSource = self;
     self.operations = [NSMutableArray new];
+    [self.table registerNib:[UINib nibWithNibName:@"NSDBuyerOperationCell" bundle:nil] forCellReuseIdentifier:@"NSDBuyerOperationCell"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,20 +53,28 @@
 }
 */
 
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 53.f;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if (!cell) {
-        
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-        
-    }
-    cell.textLabel.text = [[ @"Кешбек на сумму: " stringByAppendingString: self.operations[indexPath.row][@"operationValue"]] stringByAppendingString :@" грн"];
+    NSDBuyerOperationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NSDBuyerOperationCell"];
+  
+//    cell.textLabel.text = [[ @"Кешбек на сумму: " stringByAppendingString: self.operations[indexPath.row][@"operationValue"]] stringByAppendingString :@" грн"];
+//
+ 
+    cell.value.text = self.operations[indexPath.row][@"preparedTagetOperationValue"];
     
+    NSString * rawDate = [self.operations[indexPath.row][@"data"] substringToIndex:10];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy/MM/dd"];
     
+    NSDate *sevenDaysAgo = [[dateFormatter dateFromString:rawDate] dateByAddingTimeInterval:14*24*60*60];
+    
+    NSString *rawCalcDate =  [sevenDaysAgo descriptionWithLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ru_RU"]];
+    
+    cell.age.text = [rawCalcDate componentsSeparatedByString:@","][1];
     return cell;
-    
 }
 
 

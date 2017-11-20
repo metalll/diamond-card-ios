@@ -7,6 +7,8 @@
 //
 
 #import "LGUserData.h"
+#import "DCRequest.h"
+#import "LGHTTPClient.h"
 
 @interface LGUserData ()
 
@@ -21,6 +23,29 @@ static LGUserData *data;
         data = [LGUserData new];
     });
     return data;
+}
+
+- (void)updateDataWithCallback:(void (^)(void))callback {
+    
+    DCRequest * request1 = [[DCRequest alloc] initRequetCurrentUserAuthRole];
+    __typeof__(self) __weak weakSelf = self;
+    [[LGHTTPClient sharedInstance] loadWithRequest:request1 callback:^(LGError *clientError, NSData *requestData){
+        
+        NSDictionary * jsonDic = [NSJSONSerialization JSONObjectWithData:requestData options:0 error:nil];
+        NSLog(@"json %@",jsonDic);
+        
+        if([jsonDic[@"data"][1] isEqualToString:@"ROLE_BUYER"]) {
+            
+            
+            weakSelf.baseUser = [jsonDic[@"data"] firstObject];
+            weakSelf.userInfo = [jsonDic[@"data"] objectAtIndex:2];
+            if (callback) {
+                callback();
+            }
+        }
+        
+    }];
+    
 }
 
 @end

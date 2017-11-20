@@ -50,6 +50,7 @@ NSString * const DCCurrentUser = @"https://diamond-card.herokuapp.com/auth";
     NSMutableURLRequest * Crequest = [NSMutableURLRequest new];
     Crequest.HTTPMethod = @"POST";
     Crequest.URL = [NSURL URLWithString:DCCurrentUser];
+    Crequest.cachePolicy = NSURLCacheStorageNotAllowed;
     self.request = Crequest;
     
     return self;

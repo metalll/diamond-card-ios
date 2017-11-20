@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431B4C8F1FC26F1300974DB3 /* NSDBuyerOperationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 431B4C8D1FC26F1300974DB3 /* NSDBuyerOperationCell.m */; };
+		431B4C901FC26F1300974DB3 /* NSDBuyerOperationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431B4C8E1FC26F1300974DB3 /* NSDBuyerOperationCell.xib */; };
 		434886181F896E1D007CC64F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434886121F896D9F007CC64F /* WebKit.framework */; };
 		4348861B1F897D18007CC64F /* DCRegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4348861A1F897D18007CC64F /* DCRegViewController.m */; };
 		434886221F8A105C007CC64F /* LGHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 434886211F8A105B007CC64F /* LGHTTPClient.m */; };
@@ -51,6 +53,9 @@
 /* Begin PBXFileReference section */
 		00A56642DE956BB8EEE51C8E /* Pods-diamondCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diamondCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-diamondCard/Pods-diamondCard.debug.xcconfig"; sourceTree = "<group>"; };
 		2311C9A028DE6C82F418B758 /* Pods-diamondCardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diamondCardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-diamondCardTests/Pods-diamondCardTests.release.xcconfig"; sourceTree = "<group>"; };
+		431B4C8C1FC26F1300974DB3 /* NSDBuyerOperationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDBuyerOperationCell.h; sourceTree = "<group>"; };
+		431B4C8D1FC26F1300974DB3 /* NSDBuyerOperationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDBuyerOperationCell.m; sourceTree = "<group>"; };
+		431B4C8E1FC26F1300974DB3 /* NSDBuyerOperationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSDBuyerOperationCell.xib; sourceTree = "<group>"; };
 		434886121F896D9F007CC64F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		434886191F897D18007CC64F /* DCRegViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCRegViewController.h; sourceTree = "<group>"; };
 		4348861A1F897D18007CC64F /* DCRegViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCRegViewController.m; sourceTree = "<group>"; };
@@ -315,6 +320,9 @@
 			children = (
 				D71AFC971F9A234A000A44C9 /* ContrAgentHomeVC.h */,
 				D71AFC981F9A234A000A44C9 /* ContrAgentHomeVC.m */,
+				431B4C8C1FC26F1300974DB3 /* NSDBuyerOperationCell.h */,
+				431B4C8D1FC26F1300974DB3 /* NSDBuyerOperationCell.m */,
+				431B4C8E1FC26F1300974DB3 /* NSDBuyerOperationCell.xib */,
 			);
 			path = ContrAgent;
 			sourceTree = "<group>";
@@ -410,6 +418,7 @@
 				437BE3991F89547B00F7FB0C /* LaunchScreen.storyboard in Resources */,
 				437BE3961F89547B00F7FB0C /* Assets.xcassets in Resources */,
 				437BE3941F89547B00F7FB0C /* Main.storyboard in Resources */,
+				431B4C901FC26F1300974DB3 /* NSDBuyerOperationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +540,7 @@
 				437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */,
 				D7AAA0F61F8E40E6003A7F6C /* ACProgressBarDisplayer.m in Sources */,
 				D71AFC951F9A0ED8000A44C9 /* LGUserData.m in Sources */,
+				431B4C8F1FC26F1300974DB3 /* NSDBuyerOperationCell.m in Sources */,
 				D71AFC991F9A234A000A44C9 /* ContrAgentHomeVC.m in Sources */,
 				D71AFC921F9A0D88000A44C9 /* LGQrHomeVC.m in Sources */,
 				D71AFC881F9A0BDE000A44C9 /* CIColor+QRCode.m in Sources */,

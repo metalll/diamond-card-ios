@@ -117,6 +117,7 @@
         if (colorFilter == nil) { return nil; }
         [colorFilter setDefaults];
         [colorFilter setValue:qrCodeFilter.outputImage forKey:@"inputImage"];
+        
         [colorFilter setValue:self.color forKey:@"inputColor0"];
         [colorFilter setValue:self.backgroundColor forKey:@"inputColor1"];
         

@@ -76,7 +76,7 @@
             [self displayErrorWithMessage:@"Неверный логин или пароль"];
         }else {
             if(clientError == nil) {
-                [[[ACProgressBarDisplayer alloc] init] displayOnView:self.view
+                 [[[ACProgressBarDisplayer alloc] init] displayOnView:self.view
                                                          withMessage:@"Вход..."
                                                             andColor:[UIColor greenColor]
                                                         andIndicator:YES
@@ -93,8 +93,11 @@
                     if([jsonDic[@"data"][1] isEqualToString:@"ROLE_BUYER"]) {
                         
                         
-                        [LGUserData sharedInstance].basUser = [jsonDic[@"data"] firstObject];
+                        [LGUserData sharedInstance].baseUser = [jsonDic[@"data"] firstObject];
+                        [LGUserData sharedInstance].userInfo = [jsonDic[@"data"] objectAtIndex:2];
                         [weakSelf performSegueWithIdentifier:@"LGRoleBuyer" sender:jsonDic];
+                        [[ACProgressBarDisplayer alloc] removeFromView:weakSelf.view];
+                        
                         
 //                        VPBiometricAuthenticationFacade *biometricFacade = [[VPBiometricAuthenticationFacade alloc] init];
 //
@@ -129,7 +132,7 @@
                     }
                     
                     if([jsonDic[@"data"][1] isEqualToString:@"ROLE_CONTR_AGENT"]) {
-                           [LGUserData sharedInstance].basUser = [jsonDic[@"data"] firstObject];
+                           [LGUserData sharedInstance].baseUser = [jsonDic[@"data"] firstObject];
                             [weakSelf performSegueWithIdentifier:@"LGRoleContrAgent" sender:jsonDic];
                         
                         
