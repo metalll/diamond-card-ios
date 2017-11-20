@@ -14,4 +14,8 @@
 @property(strong,nonatomic) NSDictionary * userInfo;
 +(instancetype) sharedInstance;
 - (void)updateDataWithCallback:(void (^)(void))callback;
+- (void)saveWithName:(NSString *)name pass:(NSString *)pass;
+- (void)loadUserOfflineUser;
+- (NSDictionary *)creditalsForStoredUser;
+- (BOOL)hasUser;
 @end

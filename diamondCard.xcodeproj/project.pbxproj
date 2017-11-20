@@ -38,6 +38,8 @@
 		D71AFC991F9A234A000A44C9 /* ContrAgentHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC981F9A234A000A44C9 /* ContrAgentHomeVC.m */; };
 		D71AFC9C1F9A46F5000A44C9 /* PuscareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC9B1F9A46F5000A44C9 /* PuscareViewController.m */; };
 		D7AAA0F61F8E40E6003A7F6C /* ACProgressBarDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AAA0F51F8E40E6003A7F6C /* ACProgressBarDisplayer.m */; };
+		D7D11C611FC2DD7900A5A553 /* DCRegReq.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D11C601FC2DD7900A5A553 /* DCRegReq.m */; };
+		D7D11C641FC3046700A5A553 /* LGKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D11C631FC3046700A5A553 /* LGKeychain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,11 @@
 		D71AFC9B1F9A46F5000A44C9 /* PuscareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuscareViewController.m; sourceTree = "<group>"; };
 		D7AAA0F41F8E40E6003A7F6C /* ACProgressBarDisplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACProgressBarDisplayer.h; sourceTree = "<group>"; };
 		D7AAA0F51F8E40E6003A7F6C /* ACProgressBarDisplayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACProgressBarDisplayer.m; sourceTree = "<group>"; };
+		D7D11C5F1FC2DD7900A5A553 /* DCRegReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCRegReq.h; sourceTree = "<group>"; };
+		D7D11C601FC2DD7900A5A553 /* DCRegReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCRegReq.m; sourceTree = "<group>"; };
+		D7D11C621FC3046700A5A553 /* LGKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGKeychain.h; sourceTree = "<group>"; };
+		D7D11C631FC3046700A5A553 /* LGKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGKeychain.m; sourceTree = "<group>"; };
+		D7D11C651FC304B800A5A553 /* diamondCard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = diamondCard.entitlements; sourceTree = "<group>"; };
 		FEF3457CE4324F07772946ED /* libPods-diamondCardTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diamondCardTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -210,6 +217,8 @@
 		437BE3801F89547900F7FB0C = {
 			isa = PBXGroup;
 			children = (
+				D7D11C621FC3046700A5A553 /* LGKeychain.h */,
+				D7D11C631FC3046700A5A553 /* LGKeychain.m */,
 				D718EDB91FAA22D500AB5CEC /* UserOperationsViewController.h */,
 				D718EDBA1FAA22D500AB5CEC /* UserOperationsViewController.m */,
 				D718EDB61FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.h */,
@@ -242,6 +251,7 @@
 		437BE38B1F89547A00F7FB0C /* diamondCard */ = {
 			isa = PBXGroup;
 			children = (
+				D7D11C651FC304B800A5A553 /* diamondCard.entitlements */,
 				D71AFC961F9A200F000A44C9 /* ContrAgent */,
 				D71AFC8C1F9A0D60000A44C9 /* Buyer */,
 				434886231F8A108F007CC64F /* Entity */,
@@ -290,6 +300,8 @@
 				437BE3B31F8954BF00F7FB0C /* DCLoginViewController.m */,
 				434886191F897D18007CC64F /* DCRegViewController.h */,
 				4348861A1F897D18007CC64F /* DCRegViewController.m */,
+				D7D11C5F1FC2DD7900A5A553 /* DCRegReq.h */,
+				D7D11C601FC2DD7900A5A553 /* DCRegReq.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -383,6 +395,11 @@
 					437BE3881F89547900F7FB0C = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					437BE3A01F89547B00F7FB0C = {
 						CreatedOnToolsVersion = 9.0;
@@ -549,6 +566,7 @@
 				D71AFC9C1F9A46F5000A44C9 /* PuscareViewController.m in Sources */,
 				434886301F8A1A5C007CC64F /* NSMutableURLRequest+LGHTTP.m in Sources */,
 				434886331F8A1AF3007CC64F /* DCRequest.m in Sources */,
+				D7D11C641FC3046700A5A553 /* LGKeychain.m in Sources */,
 				D71AFC8B1F9A0CCD000A44C9 /* QRCodeGenerator.m in Sources */,
 				437BE39C1F89547B00F7FB0C /* main.m in Sources */,
 				4348861B1F897D18007CC64F /* DCRegViewController.m in Sources */,
@@ -557,6 +575,7 @@
 				437BE38E1F89547A00F7FB0C /* AppDelegate.m in Sources */,
 				434886221F8A105C007CC64F /* LGHTTPClient.m in Sources */,
 				D718EDB81FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.m in Sources */,
+				D7D11C611FC2DD7900A5A553 /* DCRegReq.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,6 +726,7 @@
 			baseConfigurationReference = 00A56642DE956BB8EEE51C8E /* Pods-diamondCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = diamondCard/diamondCard.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 328Q23T368;
@@ -725,6 +745,7 @@
 			baseConfigurationReference = 7F9902B8206D0D23137B4544 /* Pods-diamondCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = diamondCard/diamondCard.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 328Q23T368;

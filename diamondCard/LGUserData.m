@@ -9,6 +9,9 @@
 #import "LGUserData.h"
 #import "DCRequest.h"
 #import "LGHTTPClient.h"
+#import "LGKeychain.h"
+
+static NSString *const keychainName = @"DCService";
 
 @interface LGUserData ()
 
@@ -46,6 +49,35 @@ static LGUserData *data;
         
     }];
     
+}
+
+
+- (void)saveWithName:(NSString *)name pass:(NSString *)pass {
+    [[LGKeychain defaultKeychain] storeUsername:name password:pass identifier:keychainName info:@{
+                                                                                                  @"A":self.baseUser,
+                                                                                                  @"B":self.userInfo,
+                                                                                                  } forService:keychainName];
+}
+
+- (void)loadUserOfflineUser {
+    NSDictionary *userInfoDic = [[LGKeychain defaultKeychain] credentialsForIdentifier:keychainName service:keychainName];
+    
+    self.baseUser = userInfoDic[@"info"][@"A"];
+    self.userInfo = userInfoDic[@"info"][@"B"];
+    
+    NSLog(@"");
+}
+
+- (NSDictionary *)creditalsForStoredUser {
+    return [[LGKeychain defaultKeychain] credentialsForIdentifier:keychainName service:keychainName];
+}
+
+- (BOOL)hasUser {
+   NSDictionary *respDic = [[LGKeychain defaultKeychain] credentialsForIdentifier:keychainName service:keychainName];
+    if (respDic && respDic.allKeys.count>1) {
+        return YES;
+    }
+    return NO;
 }
 
 @end
