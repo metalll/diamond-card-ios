@@ -9,6 +9,7 @@
 #import "LGQrHomeVC.h"
 #import "QRCodeGenerator.h"
 #import "LGUserData.h"
+#import "LGNotificationsWrapper.h"
 
 @interface LGQrHomeVC ()
 @property (weak, nonatomic) IBOutlet UILabel *balance;
@@ -32,6 +33,13 @@
     self.shadowBalanceBox.layer.cornerRadius = 5.f;
     self.shadowBalanceBox.layer.masksToBounds = YES;
     
+    [[LGNotificationsWrapper currentInstance] requestWithCallback:^(BOOL isGranted) {
+        if (isGranted) {
+            [[LGNotificationsWrapper currentInstance] registerNotifications];
+        }
+    }];
+  
+   
     
     [[LGUserData sharedInstance] updateDataWithCallback:^{
         weakSelf.id_card.text = [@"ID карты: " stringByAppendingString:[LGUserData sharedInstance].baseUser[@"cashbackCardNumber"]];

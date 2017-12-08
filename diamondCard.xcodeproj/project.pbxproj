@@ -26,6 +26,9 @@
 		437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3B31F8954BF00F7FB0C /* DCLoginViewController.m */; };
 		AEF38FED1D2B7DC4D226130A /* libPods-diamondCard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0CBC7E332C75D8DD20EEF3 /* libPods-diamondCard.a */; };
 		C645CD77C2DD75CFA550E702 /* libPods-diamondCardTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF3457CE4324F07772946ED /* libPods-diamondCardTests.a */; };
+		D70B9AFD1FDAD04300494D09 /* LGNotificationsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D70B9AFC1FDAD04300494D09 /* LGNotificationsWrapper.m */; };
+		D70B9B001FDAD0F700494D09 /* AppDelegate+LGNotificationsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D70B9AFF1FDAD0F700494D09 /* AppDelegate+LGNotificationsWrapper.m */; };
+		D70B9B031FDADCFC00494D09 /* LGNotificationsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D70B9B021FDADCFC00494D09 /* LGNotificationsRequest.m */; };
 		D718EDB51FAA15E100AB5CEC /* DCCashbackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D718EDB41FAA15E100AB5CEC /* DCCashbackRequest.m */; };
 		D718EDB81FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D718EDB71FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.m */; };
 		D718EDBB1FAA22D500AB5CEC /* UserOperationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D718EDBA1FAA22D500AB5CEC /* UserOperationsViewController.m */; };
@@ -100,6 +103,12 @@
 		6CED2BC7B7FE237F67A58935 /* Pods-diamondCardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diamondCardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-diamondCardTests/Pods-diamondCardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F9902B8206D0D23137B4544 /* Pods-diamondCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diamondCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-diamondCard/Pods-diamondCard.release.xcconfig"; sourceTree = "<group>"; };
 		8E0CBC7E332C75D8DD20EEF3 /* libPods-diamondCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diamondCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D70B9AFB1FDAD04300494D09 /* LGNotificationsWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGNotificationsWrapper.h; sourceTree = "<group>"; };
+		D70B9AFC1FDAD04300494D09 /* LGNotificationsWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGNotificationsWrapper.m; sourceTree = "<group>"; };
+		D70B9AFE1FDAD0F700494D09 /* AppDelegate+LGNotificationsWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+LGNotificationsWrapper.h"; sourceTree = "<group>"; };
+		D70B9AFF1FDAD0F700494D09 /* AppDelegate+LGNotificationsWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LGNotificationsWrapper.m"; sourceTree = "<group>"; };
+		D70B9B011FDADCFC00494D09 /* LGNotificationsRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGNotificationsRequest.h; sourceTree = "<group>"; };
+		D70B9B021FDADCFC00494D09 /* LGNotificationsRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNotificationsRequest.m; sourceTree = "<group>"; };
 		D718EDB31FAA15E100AB5CEC /* DCCashbackRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCCashbackRequest.h; sourceTree = "<group>"; };
 		D718EDB41FAA15E100AB5CEC /* DCCashbackRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCCashbackRequest.m; sourceTree = "<group>"; };
 		D718EDB61FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContrAgentOperationsViewController.h; sourceTree = "<group>"; };
@@ -278,6 +287,7 @@
 		437BE38B1F89547A00F7FB0C /* diamondCard */ = {
 			isa = PBXGroup;
 			children = (
+				D70B9AFA1FDAD02E00494D09 /* LGNotifications */,
 				D786D87B1FDACD7200E411DC /* QRCodeReader */,
 				D7D11C651FC304B800A5A553 /* diamondCard.entitlements */,
 				D71AFC961F9A200F000A44C9 /* ContrAgent */,
@@ -347,6 +357,19 @@
 				FEF3457CE4324F07772946ED /* libPods-diamondCardTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D70B9AFA1FDAD02E00494D09 /* LGNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				D70B9AFE1FDAD0F700494D09 /* AppDelegate+LGNotificationsWrapper.h */,
+				D70B9AFF1FDAD0F700494D09 /* AppDelegate+LGNotificationsWrapper.m */,
+				D70B9AFB1FDAD04300494D09 /* LGNotificationsWrapper.h */,
+				D70B9AFC1FDAD04300494D09 /* LGNotificationsWrapper.m */,
+				D70B9B011FDADCFC00494D09 /* LGNotificationsRequest.h */,
+				D70B9B021FDADCFC00494D09 /* LGNotificationsRequest.m */,
+			);
+			path = LGNotifications;
 			sourceTree = "<group>";
 		};
 		D71AFC8C1F9A0D60000A44C9 /* Buyer */ = {
@@ -446,6 +469,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -602,6 +628,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				437BE3911F89547B00F7FB0C /* ViewController.m in Sources */,
+				D70B9AFD1FDAD04300494D09 /* LGNotificationsWrapper.m in Sources */,
 				D718EDBB1FAA22D500AB5CEC /* UserOperationsViewController.m in Sources */,
 				437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */,
 				D7AAA0F61F8E40E6003A7F6C /* ACProgressBarDisplayer.m in Sources */,
@@ -611,7 +638,9 @@
 				D786D88A1FDACD9200E411DC /* QRCameraSwitchButton.m in Sources */,
 				D786D88B1FDACD9200E411DC /* QRToggleTorchButton.m in Sources */,
 				D786D8881FDACD9200E411DC /* QRCodeReaderViewController.m in Sources */,
+				D70B9B001FDAD0F700494D09 /* AppDelegate+LGNotificationsWrapper.m in Sources */,
 				D71AFC921F9A0D88000A44C9 /* LGQrHomeVC.m in Sources */,
+				D70B9B031FDADCFC00494D09 /* LGNotificationsRequest.m in Sources */,
 				D786D8891FDACD9200E411DC /* QRCodeReaderView.m in Sources */,
 				D71AFC881F9A0BDE000A44C9 /* CIColor+QRCode.m in Sources */,
 				D718EDB51FAA15E100AB5CEC /* DCCashbackRequest.m in Sources */,

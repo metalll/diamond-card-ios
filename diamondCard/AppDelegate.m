@@ -8,6 +8,13 @@
 
 #import "AppDelegate.h"
 #import "LGReachbilityView.h"
+#import "AppDelegate+LGNotificationsWrapper.h"
+#import "LGNotificationsWrapper.h"
+#import <UIKit/UIKit.h>
+#import "ACProgressBarDisplayer.h"
+
+@import UserNotifications;
+
 @interface AppDelegate ()
 
 @end
@@ -49,5 +56,26 @@
       [[LGReachibilityView sharedInstance] off];
 }
 
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [[LGNotificationsWrapper currentInstance] sendToken:deviceToken];
+}
+
+- (BOOL)application:(UIApplication *)application didReceiveRemoteNotification:(nonnull NSDictionary *)userInfo fetchCompletionHandler:(nonnull void (^)(UIBackgroundFetchResult))completionHandler {
+#ifdef DEBUG
+    NSLog(@"AppDelegate+LGNotificationsWrapper.h -> recive remote %@",userInfo);
+#endif
+    
+    UIView * v = [[UIApplication sharedApplication] keyWindow];
+    
+    [[[ACProgressBarDisplayer alloc] init] displayOnView:v
+                                             withMessage:@"Запрос на кешбек"
+                                                andColor:[UIColor blueColor]
+                                            andIndicator:NO
+                                                andFaded:YES];
+
+    
+    return YES;
+}
 
 @end
