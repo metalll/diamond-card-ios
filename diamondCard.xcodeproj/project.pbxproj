@@ -37,6 +37,11 @@
 		D71AFC951F9A0ED8000A44C9 /* LGUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC941F9A0ED8000A44C9 /* LGUserData.m */; };
 		D71AFC991F9A234A000A44C9 /* ContrAgentHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC981F9A234A000A44C9 /* ContrAgentHomeVC.m */; };
 		D71AFC9C1F9A46F5000A44C9 /* PuscareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC9B1F9A46F5000A44C9 /* PuscareViewController.m */; };
+		D786D8871FDACD9200E411DC /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = D786D87D1FDACD9000E411DC /* QRCodeReader.m */; };
+		D786D8881FDACD9200E411DC /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D786D87E1FDACD9100E411DC /* QRCodeReaderViewController.m */; };
+		D786D8891FDACD9200E411DC /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D786D8811FDACD9100E411DC /* QRCodeReaderView.m */; };
+		D786D88A1FDACD9200E411DC /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D786D8821FDACD9100E411DC /* QRCameraSwitchButton.m */; };
+		D786D88B1FDACD9200E411DC /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D786D8841FDACD9200E411DC /* QRToggleTorchButton.m */; };
 		D7AAA0F61F8E40E6003A7F6C /* ACProgressBarDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AAA0F51F8E40E6003A7F6C /* ACProgressBarDisplayer.m */; };
 		D7D11C611FC2DD7900A5A553 /* DCRegReq.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D11C601FC2DD7900A5A553 /* DCRegReq.m */; };
 		D7D11C641FC3046700A5A553 /* LGKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D11C631FC3046700A5A553 /* LGKeychain.m */; };
@@ -116,6 +121,17 @@
 		D71AFC981F9A234A000A44C9 /* ContrAgentHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContrAgentHomeVC.m; sourceTree = "<group>"; };
 		D71AFC9A1F9A46F5000A44C9 /* PuscareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PuscareViewController.h; sourceTree = "<group>"; };
 		D71AFC9B1F9A46F5000A44C9 /* PuscareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuscareViewController.m; sourceTree = "<group>"; };
+		D786D87C1FDACD9000E411DC /* QRCodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRCodeReader.h; path = diamondCard/QRCodeReader/QRCodeReader.h; sourceTree = SOURCE_ROOT; };
+		D786D87D1FDACD9000E411DC /* QRCodeReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRCodeReader.m; path = diamondCard/QRCodeReader/QRCodeReader.m; sourceTree = SOURCE_ROOT; };
+		D786D87E1FDACD9100E411DC /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderViewController.m; path = diamondCard/QRCodeReader/QRCodeReaderViewController.m; sourceTree = SOURCE_ROOT; };
+		D786D87F1FDACD9100E411DC /* QRCodeReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderViewController.h; path = diamondCard/QRCodeReader/QRCodeReaderViewController.h; sourceTree = SOURCE_ROOT; };
+		D786D8801FDACD9100E411DC /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRCameraSwitchButton.h; path = diamondCard/QRCodeReader/QRCameraSwitchButton.h; sourceTree = SOURCE_ROOT; };
+		D786D8811FDACD9100E411DC /* QRCodeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderView.m; path = diamondCard/QRCodeReader/QRCodeReaderView.m; sourceTree = SOURCE_ROOT; };
+		D786D8821FDACD9100E411DC /* QRCameraSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRCameraSwitchButton.m; path = diamondCard/QRCodeReader/QRCameraSwitchButton.m; sourceTree = SOURCE_ROOT; };
+		D786D8831FDACD9200E411DC /* QRToggleTorchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRToggleTorchButton.h; path = diamondCard/QRCodeReader/QRToggleTorchButton.h; sourceTree = SOURCE_ROOT; };
+		D786D8841FDACD9200E411DC /* QRToggleTorchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRToggleTorchButton.m; path = diamondCard/QRCodeReader/QRToggleTorchButton.m; sourceTree = SOURCE_ROOT; };
+		D786D8851FDACD9200E411DC /* QRCodeReaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderDelegate.h; path = diamondCard/QRCodeReader/QRCodeReaderDelegate.h; sourceTree = SOURCE_ROOT; };
+		D786D8861FDACD9200E411DC /* QRCodeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderView.h; path = diamondCard/QRCodeReader/QRCodeReaderView.h; sourceTree = SOURCE_ROOT; };
 		D7AAA0F41F8E40E6003A7F6C /* ACProgressBarDisplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACProgressBarDisplayer.h; sourceTree = "<group>"; };
 		D7AAA0F51F8E40E6003A7F6C /* ACProgressBarDisplayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACProgressBarDisplayer.m; sourceTree = "<group>"; };
 		D7D11C5F1FC2DD7900A5A553 /* DCRegReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCRegReq.h; sourceTree = "<group>"; };
@@ -262,6 +278,7 @@
 		437BE38B1F89547A00F7FB0C /* diamondCard */ = {
 			isa = PBXGroup;
 			children = (
+				D786D87B1FDACD7200E411DC /* QRCodeReader */,
 				D7D11C651FC304B800A5A553 /* diamondCard.entitlements */,
 				D71AFC961F9A200F000A44C9 /* ContrAgent */,
 				D71AFC8C1F9A0D60000A44C9 /* Buyer */,
@@ -351,6 +368,24 @@
 				431B4C8E1FC26F1300974DB3 /* NSDBuyerOperationCell.xib */,
 			);
 			path = ContrAgent;
+			sourceTree = "<group>";
+		};
+		D786D87B1FDACD7200E411DC /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				D786D8801FDACD9100E411DC /* QRCameraSwitchButton.h */,
+				D786D8821FDACD9100E411DC /* QRCameraSwitchButton.m */,
+				D786D87C1FDACD9000E411DC /* QRCodeReader.h */,
+				D786D87D1FDACD9000E411DC /* QRCodeReader.m */,
+				D786D8851FDACD9200E411DC /* QRCodeReaderDelegate.h */,
+				D786D8861FDACD9200E411DC /* QRCodeReaderView.h */,
+				D786D8811FDACD9100E411DC /* QRCodeReaderView.m */,
+				D786D87F1FDACD9100E411DC /* QRCodeReaderViewController.h */,
+				D786D87E1FDACD9100E411DC /* QRCodeReaderViewController.m */,
+				D786D8831FDACD9200E411DC /* QRToggleTorchButton.h */,
+				D786D8841FDACD9200E411DC /* QRToggleTorchButton.m */,
+			);
+			path = QRCodeReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,7 +608,11 @@
 				D71AFC951F9A0ED8000A44C9 /* LGUserData.m in Sources */,
 				431B4C8F1FC26F1300974DB3 /* NSDBuyerOperationCell.m in Sources */,
 				D71AFC991F9A234A000A44C9 /* ContrAgentHomeVC.m in Sources */,
+				D786D88A1FDACD9200E411DC /* QRCameraSwitchButton.m in Sources */,
+				D786D88B1FDACD9200E411DC /* QRToggleTorchButton.m in Sources */,
+				D786D8881FDACD9200E411DC /* QRCodeReaderViewController.m in Sources */,
 				D71AFC921F9A0D88000A44C9 /* LGQrHomeVC.m in Sources */,
+				D786D8891FDACD9200E411DC /* QRCodeReaderView.m in Sources */,
 				D71AFC881F9A0BDE000A44C9 /* CIColor+QRCode.m in Sources */,
 				D718EDB51FAA15E100AB5CEC /* DCCashbackRequest.m in Sources */,
 				D7D11C681FC30FEC00A5A553 /* LGReachibility.m in Sources */,
@@ -589,6 +628,7 @@
 				D71AFC831F9A03BB000A44C9 /* VPBiometricAuthenticationFacade.m in Sources */,
 				4348862C1F8A19DF007CC64F /* NSDictionary+LGHTTP.m in Sources */,
 				437BE38E1F89547A00F7FB0C /* AppDelegate.m in Sources */,
+				D786D8871FDACD9200E411DC /* QRCodeReader.m in Sources */,
 				434886221F8A105C007CC64F /* LGHTTPClient.m in Sources */,
 				D718EDB81FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.m in Sources */,
 				D7D11C611FC2DD7900A5A553 /* DCRegReq.m in Sources */,

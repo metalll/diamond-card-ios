@@ -10,9 +10,6 @@
 
 @interface ContrAgentOperationsViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
-
-
-
 @property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end

@@ -3,92 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		054BA5059A71071E58E8C3355CC383CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */; };
-		1474FD87A182585ACB307CF7301DAFAE /* QRCodeReaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6987B745CC5E3B3059307603DA5B06CF /* QRCodeReaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B2618C2149CC560251CFB935576B4E5 /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0416AC8997DFF35F41D8A1E8DC35F1 /* QRCodeReaderView.m */; };
-		2908B99045BC5B7E8DC549D5D697C9E9 /* QRCodeReaderViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B901A8DE28249CC3F6A4644AF5BDBD6 /* QRCodeReaderViewController-dummy.m */; };
-		3F459280007B50EE67C04E934243093C /* QRToggleTorchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 436115330CA849F4C7C8BE5E74303E2F /* QRToggleTorchButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57680CFAA4A6A4F2492F9B15E2FCFAE3 /* Pods-diamondCard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5730861BC19D4C3D8522083A067670 /* Pods-diamondCard-dummy.m */; };
-		7163221BB7BB8F13EF25358626811FF2 /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B58F24020C9251DB3F3122B35D91B4E9 /* QRCameraSwitchButton.m */; };
-		73A98905D3534C5CD2C34BED0BC5BA6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
-		8C78A447005E9FACB90767244B6CB8E2 /* QRCodeReaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B9E233967577B69F46FE710FB5982A /* QRCodeReaderViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D6F5D4281639CE4AD2653E8BA31CEF9 /* QRCameraSwitchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EDCCFD71680BD28004B300C2A811E5B /* QRCameraSwitchButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ACC21A49E1D80878E547861C343DF40E /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4B1A506DE85FF4005386561C74098 /* QRCodeReaderViewController.m */; };
-		B78EDB2EF6DAFB805BEB0279EDEE423E /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB731E8D2D6851363B0C429FA25FDF /* QRCodeReader.m */; };
-		BDDD1BFCC6994B40B222BE581CB87056 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
-		C56FA605E22292C02004FC0C50DDADF4 /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4E15F86628E55AD4191B9807B9EEA0 /* QRToggleTorchButton.m */; };
+		3FA263BA8F2EA314487BAD67C6086483 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B0C76651B817ADE469C35F046FB49168 /* Pods-diamondCard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5730861BC19D4C3D8522083A067670 /* Pods-diamondCard-dummy.m */; };
+		BDDD1BFCC6994B40B222BE581CB87056 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		C762E1B19E962AD83705211F934C8A12 /* Pods-diamondCardTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A862B70C415D508A8D084B432E8EF33D /* Pods-diamondCardTests-dummy.m */; };
-		CE71EB9AC0FA2CCC1D6C270209E5C1C1 /* QRCodeReaderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E7FEB7718490E7814846E5D821466E /* QRCodeReaderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0CF365F5220F9095E6535A21ADE969B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
-		F371F541DF4FD41B28CE49414497CADB /* QRCodeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = C0B26D15A16C6A57CCD115A95C638B30 /* QRCodeReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		6AEC37B411329399F8D79BF0B6BF7ADD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0ACDD9A1E08A0B5AA9D8F5CD9D44EC00;
-			remoteInfo = QRCodeReaderViewController;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		13E7FEB7718490E7814846E5D821466E /* QRCodeReaderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderDelegate.h; path = QRCodeReaderViewController/QRCodeReaderDelegate.h; sourceTree = "<group>"; };
+		10AC57D829D97D7921C1AD2930176880 /* libPods-diamondCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diamondCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E1DE2E14699685E69B56A5B5DAB5A1F /* Pods-diamondCardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-diamondCardTests.release.xcconfig"; sourceTree = "<group>"; };
-		21B9E233967577B69F46FE710FB5982A /* QRCodeReaderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderViewController.h; path = QRCodeReaderViewController/QRCodeReaderViewController.h; sourceTree = "<group>"; };
-		2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		2B901A8DE28249CC3F6A4644AF5BDBD6 /* QRCodeReaderViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCodeReaderViewController-dummy.m"; sourceTree = "<group>"; };
-		2D8C5EE178DA7EEFEAD2F968C496BB52 /* QRCodeReaderViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCodeReaderViewController.xcconfig; sourceTree = "<group>"; };
 		3DD82694C72975900F24A60B258CFD46 /* Pods-diamondCardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-diamondCardTests.debug.xcconfig"; sourceTree = "<group>"; };
-		436115330CA849F4C7C8BE5E74303E2F /* QRToggleTorchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRToggleTorchButton.h; path = QRCodeReaderViewController/QRToggleTorchButton.h; sourceTree = "<group>"; };
 		580B934ADC1FCDB8B5E1E5EEE515BDCD /* Pods-diamondCardTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-diamondCardTests-resources.sh"; sourceTree = "<group>"; };
-		5BFB731E8D2D6851363B0C429FA25FDF /* QRCodeReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReader.m; path = QRCodeReaderViewController/QRCodeReader.m; sourceTree = "<group>"; };
 		5E8D075C703040900EA1C153A6CCC539 /* Pods-diamondCardTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-diamondCardTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		642220E9A8BB4B47E1DC9B0624D9D000 /* libQRCodeReaderViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libQRCodeReaderViewController.a; path = libQRCodeReaderViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		693CDE3898B8DA875D59F803D6CF6CAE /* Pods-diamondCardTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-diamondCardTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6987B745CC5E3B3059307603DA5B06CF /* QRCodeReaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderView.h; path = QRCodeReaderViewController/QRCodeReaderView.h; sourceTree = "<group>"; };
 		69F1AC882A9EACF692F0BB8B349B4444 /* Pods-diamondCard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-diamondCard-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6BBDA7C1CC500B516A3803E96C31B310 /* Pods-diamondCard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-diamondCard-acknowledgements.plist"; sourceTree = "<group>"; };
-		7D7A7B985713AC2B1F559B048E79A895 /* QRCodeReaderViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReaderViewController-prefix.pch"; sourceTree = "<group>"; };
-		7F4E15F86628E55AD4191B9807B9EEA0 /* QRToggleTorchButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRToggleTorchButton.m; path = QRCodeReaderViewController/QRToggleTorchButton.m; sourceTree = "<group>"; };
-		840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		8EDCCFD71680BD28004B300C2A811E5B /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCameraSwitchButton.h; path = QRCodeReaderViewController/QRCameraSwitchButton.h; sourceTree = "<group>"; };
 		8F0BD2FEE15BF140A2EA35C6099481BF /* Pods-diamondCardTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-diamondCardTests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94AB70195546F4014F9747C913326E03 /* Pods-diamondCard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-diamondCard-resources.sh"; sourceTree = "<group>"; };
 		A862B70C415D508A8D084B432E8EF33D /* Pods-diamondCardTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-diamondCardTests-dummy.m"; sourceTree = "<group>"; };
 		A96BDC2A21E9024286D71FF5CBCDAC89 /* Pods-diamondCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-diamondCard.release.xcconfig"; sourceTree = "<group>"; };
-		AF1E4A438B2AE3C827F46598C345C90E /* libPods-diamondCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-diamondCard.a"; path = "libPods-diamondCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B58F24020C9251DB3F3122B35D91B4E9 /* QRCameraSwitchButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCameraSwitchButton.m; path = QRCodeReaderViewController/QRCameraSwitchButton.m; sourceTree = "<group>"; };
+		B8A8D8EF89FCB6D31C5A7B88441D2699 /* libPods-diamondCardTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diamondCardTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8EFBE8B6401A285C0E4A62E120A364E /* Pods-diamondCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-diamondCard.debug.xcconfig"; sourceTree = "<group>"; };
 		BA5730861BC19D4C3D8522083A067670 /* Pods-diamondCard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-diamondCard-dummy.m"; sourceTree = "<group>"; };
-		C0B26D15A16C6A57CCD115A95C638B30 /* QRCodeReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReader.h; path = QRCodeReaderViewController/QRCodeReader.h; sourceTree = "<group>"; };
-		D4F4B1A506DE85FF4005386561C74098 /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderViewController.m; path = QRCodeReaderViewController/QRCodeReaderViewController.m; sourceTree = "<group>"; };
 		DB66FAFB82547FD0FC691BCF40D76914 /* Pods-diamondCard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-diamondCard-frameworks.sh"; sourceTree = "<group>"; };
-		DE0416AC8997DFF35F41D8A1E8DC35F1 /* QRCodeReaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderView.m; path = QRCodeReaderViewController/QRCodeReaderView.m; sourceTree = "<group>"; };
-		EF872FA97627BC0FCAA01CE295D06998 /* libPods-diamondCardTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-diamondCardTests.a"; path = "libPods-diamondCardTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2FE806DB0FB74AAC336F3AD8DB92C3DA /* Frameworks */ = {
+		411D2CCB5D961CF9C5C19DAEAE75E3A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				054BA5059A71071E58E8C3355CC383CA /* AVFoundation.framework in Frameworks */,
-				E0CF365F5220F9095E6535A21ADE969B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7C60F2DA60C3E374239F6A5F5239375 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				73A98905D3534C5CD2C34BED0BC5BA6F /* Foundation.framework in Frameworks */,
+				3FA263BA8F2EA314487BAD67C6086483 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,14 +54,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AB9C43F4BAD2992BD9EE60E0C1AC390B /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5F2B7F11A266AACB0AB6D8EDA822F8AC /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,17 +61,6 @@
 				681DB69206E9F9BDF37075723CB637C7 /* Pods-diamondCardTests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		62A8494820BB28EFFEE76785607A2F5B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2D8C5EE178DA7EEFEAD2F968C496BB52 /* QRCodeReaderViewController.xcconfig */,
-				2B901A8DE28249CC3F6A4644AF5BDBD6 /* QRCodeReaderViewController-dummy.m */,
-				7D7A7B985713AC2B1F559B048E79A895 /* QRCodeReaderViewController-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/QRCodeReaderViewController";
 			sourceTree = "<group>";
 		};
 		681DB69206E9F9BDF37075723CB637C7 /* Pods-diamondCardTests */ = {
@@ -150,58 +82,35 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				CEC3E04447B872CDC80164B576C186DF /* Pods */,
-				DD67156961121FF987068C4555955759 /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FA8A9BCBF116E30AF7A514943860ACDC /* Products */,
 				5F2B7F11A266AACB0AB6D8EDA822F8AC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		AB9C43F4BAD2992BD9EE60E0C1AC390B /* iOS */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */,
-				2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CEC3E04447B872CDC80164B576C186DF /* Pods */ = {
+		FA8A9BCBF116E30AF7A514943860ACDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9886D831AECD52F76F234B54F40B132 /* QRCodeReaderViewController */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		DD67156961121FF987068C4555955759 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AF1E4A438B2AE3C827F46598C345C90E /* libPods-diamondCard.a */,
-				EF872FA97627BC0FCAA01CE295D06998 /* libPods-diamondCardTests.a */,
-				642220E9A8BB4B47E1DC9B0624D9D000 /* libQRCodeReaderViewController.a */,
+				10AC57D829D97D7921C1AD2930176880 /* libPods-diamondCard.a */,
+				B8A8D8EF89FCB6D31C5A7B88441D2699 /* libPods-diamondCardTests.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E9886D831AECD52F76F234B54F40B132 /* QRCodeReaderViewController */ = {
-			isa = PBXGroup;
-			children = (
-				8EDCCFD71680BD28004B300C2A811E5B /* QRCameraSwitchButton.h */,
-				B58F24020C9251DB3F3122B35D91B4E9 /* QRCameraSwitchButton.m */,
-				C0B26D15A16C6A57CCD115A95C638B30 /* QRCodeReader.h */,
-				5BFB731E8D2D6851363B0C429FA25FDF /* QRCodeReader.m */,
-				13E7FEB7718490E7814846E5D821466E /* QRCodeReaderDelegate.h */,
-				6987B745CC5E3B3059307603DA5B06CF /* QRCodeReaderView.h */,
-				DE0416AC8997DFF35F41D8A1E8DC35F1 /* QRCodeReaderView.m */,
-				21B9E233967577B69F46FE710FB5982A /* QRCodeReaderViewController.h */,
-				D4F4B1A506DE85FF4005386561C74098 /* QRCodeReaderViewController.m */,
-				436115330CA849F4C7C8BE5E74303E2F /* QRToggleTorchButton.h */,
-				7F4E15F86628E55AD4191B9807B9EEA0 /* QRToggleTorchButton.m */,
-				62A8494820BB28EFFEE76785607A2F5B /* Support Files */,
-			);
-			name = QRCodeReaderViewController;
-			path = QRCodeReaderViewController;
 			sourceTree = "<group>";
 		};
 		FCCA3C98BF5A60BB87FBFB1B0940B314 /* Pods-diamondCard */ = {
@@ -221,55 +130,21 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		A1B809DA118A2CCC7B5EDA778C1D7F9C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D6F5D4281639CE4AD2653E8BA31CEF9 /* QRCameraSwitchButton.h in Headers */,
-				F371F541DF4FD41B28CE49414497CADB /* QRCodeReader.h in Headers */,
-				CE71EB9AC0FA2CCC1D6C270209E5C1C1 /* QRCodeReaderDelegate.h in Headers */,
-				1474FD87A182585ACB307CF7301DAFAE /* QRCodeReaderView.h in Headers */,
-				8C78A447005E9FACB90767244B6CB8E2 /* QRCodeReaderViewController.h in Headers */,
-				3F459280007B50EE67C04E934243093C /* QRToggleTorchButton.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		0ACDD9A1E08A0B5AA9D8F5CD9D44EC00 /* QRCodeReaderViewController */ = {
+		329FE050DA42EEC825EB2AB8AFDEB26A /* Pods-diamondCard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BCA67E4FAD17C786FDFACF5ECC20713B /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */;
+			buildConfigurationList = 5E8A2FFE3246DD58E68635DDE79E0175 /* Build configuration list for PBXNativeTarget "Pods-diamondCard" */;
 			buildPhases = (
-				0149AD5553BB7CC9634B59F792C12320 /* Sources */,
-				2FE806DB0FB74AAC336F3AD8DB92C3DA /* Frameworks */,
-				A1B809DA118A2CCC7B5EDA778C1D7F9C /* Headers */,
+				0101B6D879AF45A74736AE38ABAE4C9B /* Sources */,
+				411D2CCB5D961CF9C5C19DAEAE75E3A3 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = QRCodeReaderViewController;
-			productName = QRCodeReaderViewController;
-			productReference = 642220E9A8BB4B47E1DC9B0624D9D000 /* libQRCodeReaderViewController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		4158EDE83FEB8EAF0951FC44E0B923C5 /* Pods-diamondCard */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1FAB1B36C2D837D9ADA79B8F1C95910E /* Build configuration list for PBXNativeTarget "Pods-diamondCard" */;
-			buildPhases = (
-				0377141871FB2ACAF2B712F16A4EABF4 /* Sources */,
-				D7C60F2DA60C3E374239F6A5F5239375 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E5CEFEB3836C7F497F7308F136D8B5CD /* PBXTargetDependency */,
 			);
 			name = "Pods-diamondCard";
 			productName = "Pods-diamondCard";
-			productReference = AF1E4A438B2AE3C827F46598C345C90E /* libPods-diamondCard.a */;
+			productReference = 10AC57D829D97D7921C1AD2930176880 /* libPods-diamondCard.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		9E82DAEC902ADA036EEB142C91110836 /* Pods-diamondCardTests */ = {
@@ -285,7 +160,7 @@
 			);
 			name = "Pods-diamondCardTests";
 			productName = "Pods-diamondCardTests";
-			productReference = EF872FA97627BC0FCAA01CE295D06998 /* libPods-diamondCardTests.a */;
+			productReference = B8A8D8EF89FCB6D31C5A7B88441D2699 /* libPods-diamondCardTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -295,7 +170,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0910;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -305,36 +180,22 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DD67156961121FF987068C4555955759 /* Products */;
+			productRefGroup = FA8A9BCBF116E30AF7A514943860ACDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4158EDE83FEB8EAF0951FC44E0B923C5 /* Pods-diamondCard */,
+				329FE050DA42EEC825EB2AB8AFDEB26A /* Pods-diamondCard */,
 				9E82DAEC902ADA036EEB142C91110836 /* Pods-diamondCardTests */,
-				0ACDD9A1E08A0B5AA9D8F5CD9D44EC00 /* QRCodeReaderViewController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0149AD5553BB7CC9634B59F792C12320 /* Sources */ = {
+		0101B6D879AF45A74736AE38ABAE4C9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7163221BB7BB8F13EF25358626811FF2 /* QRCameraSwitchButton.m in Sources */,
-				B78EDB2EF6DAFB805BEB0279EDEE423E /* QRCodeReader.m in Sources */,
-				1B2618C2149CC560251CFB935576B4E5 /* QRCodeReaderView.m in Sources */,
-				2908B99045BC5B7E8DC549D5D697C9E9 /* QRCodeReaderViewController-dummy.m in Sources */,
-				ACC21A49E1D80878E547861C343DF40E /* QRCodeReaderViewController.m in Sources */,
-				C56FA605E22292C02004FC0C50DDADF4 /* QRToggleTorchButton.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0377141871FB2ACAF2B712F16A4EABF4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				57680CFAA4A6A4F2492F9B15E2FCFAE3 /* Pods-diamondCard-dummy.m in Sources */,
+				B0C76651B817ADE469C35F046FB49168 /* Pods-diamondCard-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,41 +209,8 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		E5CEFEB3836C7F497F7308F136D8B5CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = QRCodeReaderViewController;
-			target = 0ACDD9A1E08A0B5AA9D8F5CD9D44EC00 /* QRCodeReaderViewController */;
-			targetProxy = 6AEC37B411329399F8D79BF0B6BF7ADD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		2A294FFEFDF8B13832C28A3829432C1F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D8C5EE178DA7EEFEAD2F968C496BB52 /* QRCodeReaderViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-			};
-			name = Release;
-		};
-		54FF8D7D3C1D7AFC070DFAFB0E1F04C7 /* Debug */ = {
+		53A920796DC2174E4FD8B32C8CFD8F82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8EFBE8B6401A285C0E4A62E120A364E /* Pods-diamondCard.debug.xcconfig */;
 			buildSettings = {
@@ -405,30 +233,6 @@
 			};
 			name = Debug;
 		};
-		6CAFB39DE69138E654B22DA3FEB5C140 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D8C5EE178DA7EEFEAD2F968C496BB52 /* QRCodeReaderViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-			};
-			name = Debug;
-		};
 		9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -439,7 +243,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -447,15 +253,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -501,7 +313,59 @@
 			};
 			name = Debug;
 		};
-		B49A40A8B8CA55CC7E31C2F9C893F24B /* Release */ = {
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0E8609FD8C95C1A1169D19B807A5C27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A96BDC2A21E9024286D71FF5CBCDAC89 /* Pods-diamondCard.release.xcconfig */;
 			buildSettings = {
@@ -521,50 +385,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C03B8870130C98D1B02B59D003687524 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -603,15 +423,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1FAB1B36C2D837D9ADA79B8F1C95910E /* Build configuration list for PBXNativeTarget "Pods-diamondCard" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				54FF8D7D3C1D7AFC070DFAFB0E1F04C7 /* Debug */,
-				B49A40A8B8CA55CC7E31C2F9C893F24B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -621,11 +432,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BCA67E4FAD17C786FDFACF5ECC20713B /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */ = {
+		5E8A2FFE3246DD58E68635DDE79E0175 /* Build configuration list for PBXNativeTarget "Pods-diamondCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6CAFB39DE69138E654B22DA3FEB5C140 /* Debug */,
-				2A294FFEFDF8B13832C28A3829432C1F /* Release */,
+				53A920796DC2174E4FD8B32C8CFD8F82 /* Debug */,
+				C0E8609FD8C95C1A1169D19B807A5C27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

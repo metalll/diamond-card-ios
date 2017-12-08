@@ -7,7 +7,7 @@
 //
 
 #import "ContrAgentHomeVC.h"
-#import <QRCodeReaderViewController.h>
+#import "QRCodeReaderViewController.h"
 #import "PuscareViewController.h"
 
 @interface ContrAgentHomeVC () <QRCodeReaderDelegate>
