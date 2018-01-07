@@ -14,11 +14,13 @@
 {
     [self removeFromView:view];
     
-    
-    UIView *messageFrame = [[UIView alloc] initWithFrame:CGRectMake(MESSAGE_FRAME_X, MESSAGE_FRAME_BEGIN_Y, view.frame.size.width, MESSAGE_FRAME_HEIGHT)];
+    UIView *messageFrame = [[UIView alloc] initWithFrame:CGRectMake(MESSAGE_FRAME_X + 15, MESSAGE_FRAME_BEGIN_Y, view.frame.size.width - 30, MESSAGE_FRAME_HEIGHT)];
     messageFrame.backgroundColor = color;
     messageFrame.alpha = MESSAGE_FRAME_ALPHA;
     messageFrame.tag = MESSAGE_FRAME_TAG;
+    
+    messageFrame.layer.cornerRadius = 5.f;
+    messageFrame.layer.masksToBounds = YES;
     
     UILabel *strLabel = [[UILabel alloc] initWithFrame:CGRectMake(LABEL_X, LABEL_Y, view.frame.size.width, LABEL_HEIGHT)];
     strLabel.text = message;
@@ -29,10 +31,11 @@
     
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(view.frame.size.width - CLOSE_BUTTON_RIGHT_EDGE, CLOSE_BUTTON_Y, CLOSE_BUTTON_WIDTH, CLOSE_BUTTON_HEIGHT)];
     [button setTitle:@"X" forState:UIControlStateNormal];
+    button.layer.zPosition = 3;
     [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [messageFrame addSubview:button];
-    
-    
+      [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpOutside];
+    messageFrame.userInteractionEnabled = YES;
+    button.userInteractionEnabled = YES;
     
     if(indicator)
     {
@@ -44,7 +47,7 @@
     [view addSubview:messageFrame];
     
     [UIView animateWithDuration:ANIMATION_SPEED animations:^{
-        messageFrame.frame = CGRectMake(MESSAGE_FRAME_X, MESSAGE_FRAME_END_Y, view.frame.size.width, MESSAGE_FRAME_HEIGHT);
+        messageFrame.frame = CGRectMake(MESSAGE_FRAME_X + 15, MESSAGE_FRAME_END_Y, view.frame.size.width - 30, MESSAGE_FRAME_HEIGHT);
     }];
     
     if(faded)
@@ -63,7 +66,7 @@
         if(child.tag == MESSAGE_FRAME_TAG)
         {
             [UIView animateWithDuration:ANIMATION_SPEED animations:^{
-                child.frame = CGRectMake(MESSAGE_FRAME_X, MESSAGE_FRAME_BEGIN_Y, view.frame.size.width, MESSAGE_FRAME_HEIGHT);
+                child.frame = CGRectMake(MESSAGE_FRAME_X + view.frame.size.width, MESSAGE_FRAME_END_Y, view.frame.size.width, MESSAGE_FRAME_HEIGHT);
             } completion:^(BOOL finished)
              {
                  [child removeFromSuperview];
@@ -72,8 +75,9 @@
     }
 }
 
--(void)buttonPressed:(UIView*)view
-{
+- (void)buttonPressed:(UIView*)view {
+    NSLog(@"button pressed");
+    
     UIView* parent = view.superview.superview;
     [self removeFromView:parent];
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,32 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond_big" translatesAutoresizingMaskIntoConstraints="NO" id="b0x-23-zwB">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond_big" translatesAutoresizingMaskIntoConstraints="NO" id="DRY-OB-9NR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQX-Bq-aHy">
-                                <rect key="frame" x="197.5" y="340" width="134" height="70"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="58"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diamond" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKd-0t-vtE">
-                                <rect key="frame" x="13.5" y="265" width="248.5" height="70"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="58"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="A2n-d3-SkL">
+                                <rect key="frame" x="0.0" y="269" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="bXD-DX-fDb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.88334760273972601" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="b0x-23-zwB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HKw-DJ-1cT"/>
-                            <constraint firstItem="KKd-0t-vtE" firstAttribute="centerX" secondItem="b0x-23-zwB" secondAttribute="centerX" constant="-50" id="Ork-OB-Yem"/>
-                            <constraint firstItem="KKd-0t-vtE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="245" id="XKE-VZ-TNX"/>
-                            <constraint firstItem="gQX-Bq-aHy" firstAttribute="top" secondItem="KKd-0t-vtE" secondAttribute="bottom" constant="5" id="ZOO-cv-iKB"/>
-                            <constraint firstItem="gQX-Bq-aHy" firstAttribute="centerX" secondItem="b0x-23-zwB" secondAttribute="centerX" constant="77" id="cZq-DN-ox4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b0x-23-zwB" secondAttribute="bottom" id="kdv-Ak-GjI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b0x-23-zwB" secondAttribute="trailing" id="mkn-kr-W3Z"/>
-                            <constraint firstItem="b0x-23-zwB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ti6-Tx-Erz"/>
+                            <constraint firstItem="DRY-OB-9NR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="25U-Us-D6s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DRY-OB-9NR" secondAttribute="trailing" id="Fv4-Hp-8Kc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DRY-OB-9NR" secondAttribute="bottom" id="GBL-oU-GeW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A2n-d3-SkL" secondAttribute="trailing" id="feQ-Yu-WeJ"/>
+                            <constraint firstItem="A2n-d3-SkL" firstAttribute="centerY" secondItem="DRY-OB-9NR" secondAttribute="centerY" id="fsO-wR-md6"/>
+                            <constraint firstItem="DRY-OB-9NR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="pon-cZ-h26"/>
+                            <constraint firstItem="A2n-d3-SkL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vag-PN-qMI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -54,6 +47,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="diamond_big" width="1920" height="1200"/>
+        <image name="diamond_big" width="1366" height="1251"/>
+        <image name="logo" width="294" height="106"/>
     </resources>
 </document>

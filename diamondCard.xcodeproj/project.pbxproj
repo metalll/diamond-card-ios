@@ -24,8 +24,10 @@
 		437BE39C1F89547B00F7FB0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE39B1F89547B00F7FB0C /* main.m */; };
 		437BE3A61F89547B00F7FB0C /* diamondCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3A51F89547B00F7FB0C /* diamondCardTests.m */; };
 		437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3B31F8954BF00F7FB0C /* DCLoginViewController.m */; };
-		AEF38FED1D2B7DC4D226130A /* libPods-diamondCard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0CBC7E332C75D8DD20EEF3 /* libPods-diamondCard.a */; };
-		C645CD77C2DD75CFA550E702 /* libPods-diamondCardTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF3457CE4324F07772946ED /* libPods-diamondCardTests.a */; };
+		43DF5DC620023D3C0005EA55 /* DCSignInUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DF5DC520023D3C0005EA55 /* DCSignInUpVC.m */; };
+		43DF5DCC20024D7A0005EA55 /* DCSignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DF5DCB20024D7A0005EA55 /* DCSignInVC.m */; };
+		839E720CF431F1A2CB6C07F2 /* Pods_diamondCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CF3470ED2626412CC0B8D1 /* Pods_diamondCard.framework */; };
+		BF65817DC7164DEF0B71E117 /* Pods_diamondCardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4873F9FC15C0858F3419C964 /* Pods_diamondCardTests.framework */; };
 		D70B9AFD1FDAD04300494D09 /* LGNotificationsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D70B9AFC1FDAD04300494D09 /* LGNotificationsWrapper.m */; };
 		D70B9B001FDAD0F700494D09 /* AppDelegate+LGNotificationsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D70B9AFF1FDAD0F700494D09 /* AppDelegate+LGNotificationsWrapper.m */; };
 		D70B9B031FDADCFC00494D09 /* LGNotificationsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D70B9B021FDADCFC00494D09 /* LGNotificationsRequest.m */; };
@@ -100,9 +102,14 @@
 		437BE3B21F8954BF00F7FB0C /* DCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCLoginViewController.h; sourceTree = "<group>"; };
 		437BE3B31F8954BF00F7FB0C /* DCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCLoginViewController.m; sourceTree = "<group>"; };
 		437BE3B61F895D3200F7FB0C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		43DF5DC420023D3C0005EA55 /* DCSignInUpVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCSignInUpVC.h; sourceTree = "<group>"; };
+		43DF5DC520023D3C0005EA55 /* DCSignInUpVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCSignInUpVC.m; sourceTree = "<group>"; };
+		43DF5DCA20024D7A0005EA55 /* DCSignInVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCSignInVC.h; sourceTree = "<group>"; };
+		43DF5DCB20024D7A0005EA55 /* DCSignInVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCSignInVC.m; sourceTree = "<group>"; };
+		4873F9FC15C0858F3419C964 /* Pods_diamondCardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_diamondCardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CED2BC7B7FE237F67A58935 /* Pods-diamondCardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diamondCardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-diamondCardTests/Pods-diamondCardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F9902B8206D0D23137B4544 /* Pods-diamondCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diamondCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-diamondCard/Pods-diamondCard.release.xcconfig"; sourceTree = "<group>"; };
-		8E0CBC7E332C75D8DD20EEF3 /* libPods-diamondCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diamondCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95CF3470ED2626412CC0B8D1 /* Pods_diamondCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_diamondCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D70B9AFB1FDAD04300494D09 /* LGNotificationsWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGNotificationsWrapper.h; sourceTree = "<group>"; };
 		D70B9AFC1FDAD04300494D09 /* LGNotificationsWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGNotificationsWrapper.m; sourceTree = "<group>"; };
 		D70B9AFE1FDAD0F700494D09 /* AppDelegate+LGNotificationsWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+LGNotificationsWrapper.h"; sourceTree = "<group>"; };
@@ -153,7 +160,6 @@
 		D7D11C691FC3111100A5A553 /* LGReachbilityView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGReachbilityView.h; sourceTree = "<group>"; };
 		D7D11C6A1FC3111100A5A553 /* LGReachbilityView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGReachbilityView.m; sourceTree = "<group>"; };
 		D7D11C6C1FC3113D00A5A553 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		FEF3457CE4324F07772946ED /* libPods-diamondCardTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diamondCardTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +170,7 @@
 				D7D11C6D1FC3113D00A5A553 /* SystemConfiguration.framework in Frameworks */,
 				D71AFC851F9A0BC2000A44C9 /* CoreImage.framework in Frameworks */,
 				434886181F896E1D007CC64F /* WebKit.framework in Frameworks */,
-				AEF38FED1D2B7DC4D226130A /* libPods-diamondCard.a in Frameworks */,
+				839E720CF431F1A2CB6C07F2 /* Pods_diamondCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C645CD77C2DD75CFA550E702 /* libPods-diamondCardTests.a in Frameworks */,
+				BF65817DC7164DEF0B71E117 /* Pods_diamondCardTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +194,20 @@
 				2311C9A028DE6C82F418B758 /* Pods-diamondCardTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		430363A4200271EB006E5CE6 /* DCBuyerWorkflow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DCBuyerWorkflow;
+			sourceTree = "<group>";
+		};
+		430363A5200271F8006E5CE6 /* DCContAgentWorkflow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DCContAgentWorkflow;
 			sourceTree = "<group>";
 		};
 		4348861C1F8A06EF007CC64F /* CustomView */ = {
@@ -287,9 +307,9 @@
 		437BE38B1F89547A00F7FB0C /* diamondCard */ = {
 			isa = PBXGroup;
 			children = (
+				43DF5DC320023D140005EA55 /* DCViewControllers */,
 				D70B9AFA1FDAD02E00494D09 /* LGNotifications */,
 				D786D87B1FDACD7200E411DC /* QRCodeReader */,
-				D7D11C651FC304B800A5A553 /* diamondCard.entitlements */,
 				D71AFC961F9A200F000A44C9 /* ContrAgent */,
 				D71AFC8C1F9A0D60000A44C9 /* Buyer */,
 				434886231F8A108F007CC64F /* Entity */,
@@ -300,6 +320,7 @@
 				437BE38D1F89547A00F7FB0C /* AppDelegate.m */,
 				437BE38F1F89547B00F7FB0C /* ViewController.h */,
 				437BE3901F89547B00F7FB0C /* ViewController.m */,
+				D7D11C651FC304B800A5A553 /* diamondCard.entitlements */,
 				437BE3921F89547B00F7FB0C /* Main.storyboard */,
 				437BE3951F89547B00F7FB0C /* Assets.xcassets */,
 				437BE3971F89547B00F7FB0C /* LaunchScreen.storyboard */,
@@ -353,10 +374,47 @@
 				D71AFC841F9A0BC2000A44C9 /* CoreImage.framework */,
 				434886121F896D9F007CC64F /* WebKit.framework */,
 				437BE3B61F895D3200F7FB0C /* MapKit.framework */,
-				8E0CBC7E332C75D8DD20EEF3 /* libPods-diamondCard.a */,
-				FEF3457CE4324F07772946ED /* libPods-diamondCardTests.a */,
+				95CF3470ED2626412CC0B8D1 /* Pods_diamondCard.framework */,
+				4873F9FC15C0858F3419C964 /* Pods_diamondCardTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43DF5DC320023D140005EA55 /* DCViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				430363A5200271F8006E5CE6 /* DCContAgentWorkflow */,
+				430363A4200271EB006E5CE6 /* DCBuyerWorkflow */,
+				43DF5DC9200241AC0005EA55 /* DCSignUpVC */,
+				43DF5DC8200241A00005EA55 /* DCSignInVC */,
+				43DF5DC72002418D0005EA55 /* DCSignInUpVC */,
+			);
+			path = DCViewControllers;
+			sourceTree = "<group>";
+		};
+		43DF5DC72002418D0005EA55 /* DCSignInUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				43DF5DC420023D3C0005EA55 /* DCSignInUpVC.h */,
+				43DF5DC520023D3C0005EA55 /* DCSignInUpVC.m */,
+			);
+			path = DCSignInUpVC;
+			sourceTree = "<group>";
+		};
+		43DF5DC8200241A00005EA55 /* DCSignInVC */ = {
+			isa = PBXGroup;
+			children = (
+				43DF5DCA20024D7A0005EA55 /* DCSignInVC.h */,
+				43DF5DCB20024D7A0005EA55 /* DCSignInVC.m */,
+			);
+			path = DCSignInVC;
+			sourceTree = "<group>";
+		};
+		43DF5DC9200241AC0005EA55 /* DCSignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DCSignUpVC;
 			sourceTree = "<group>";
 		};
 		D70B9AFA1FDAD02E00494D09 /* LGNotifications */ = {
@@ -468,6 +526,9 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
@@ -569,7 +630,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9B3E5897B81F258E5BDAB93F /* [CP] Embed Pods Frameworks */ = {
@@ -602,7 +663,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FFACB81D8441E32F1C124BFA /* [CP] Embed Pods Frameworks */ = {
@@ -635,8 +696,10 @@
 				D71AFC951F9A0ED8000A44C9 /* LGUserData.m in Sources */,
 				431B4C8F1FC26F1300974DB3 /* NSDBuyerOperationCell.m in Sources */,
 				D71AFC991F9A234A000A44C9 /* ContrAgentHomeVC.m in Sources */,
+				43DF5DC620023D3C0005EA55 /* DCSignInUpVC.m in Sources */,
 				D786D88A1FDACD9200E411DC /* QRCameraSwitchButton.m in Sources */,
 				D786D88B1FDACD9200E411DC /* QRToggleTorchButton.m in Sources */,
+				43DF5DCC20024D7A0005EA55 /* DCSignInVC.m in Sources */,
 				D786D8881FDACD9200E411DC /* QRCodeReaderViewController.m in Sources */,
 				D70B9B001FDAD0F700494D09 /* AppDelegate+LGNotificationsWrapper.m in Sources */,
 				D71AFC921F9A0D88000A44C9 /* LGQrHomeVC.m in Sources */,

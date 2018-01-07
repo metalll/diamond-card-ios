@@ -3,79 +3,154 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FA263BA8F2EA314487BAD67C6086483 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B0C76651B817ADE469C35F046FB49168 /* Pods-diamondCard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5730861BC19D4C3D8522083A067670 /* Pods-diamondCard-dummy.m */; };
-		BDDD1BFCC6994B40B222BE581CB87056 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C762E1B19E962AD83705211F934C8A12 /* Pods-diamondCardTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A862B70C415D508A8D084B432E8EF33D /* Pods-diamondCardTests-dummy.m */; };
+		0739EF16EE19E441AB7C353D7EC92329 /* LGSideMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = ECE1B34517FE950C9F502D123A0683E9 /* LGSideMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09A01C0A2E0CEDD11BA01FF943C58581 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		147A694AEEF09AED23BDA121210C1C02 /* LGSideMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D190A4D4FE5AF7153622807B4692C /* LGSideMenuController-dummy.m */; };
+		26A960CF6CF591E4DD73076B0EEB05EE /* Pods-diamondCard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E1B82D571BEFBE0828200EE00844A3 /* Pods-diamondCard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373AC6B0FA384BDF6099C956F31DE6BC /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4662C87D11030D8FF5356B3260DD25 /* UIViewController+LGSideMenuController.m */; };
+		3AF64ECC40D98E8EC9F9568A8DA0F78B /* LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6898D5BFE09C74FFD47BC1D4F7A55514 /* LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5010D602D86C7BAE5657EE8F67DCC1C7 /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2A0810666C74C93AED17E902204EE /* LGSideMenuView.m */; };
+		59BFA70CCE466DE51ED456A31D78E0D1 /* Pods-diamondCardTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8019BCCF0A8EE5AF050BE0A92DC64C7 /* Pods-diamondCardTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66FF3ECCC8D6D65237027DEC7B5B84A8 /* LGSideMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D91D73F736FD5E3DAE723E91EAE18109 /* LGSideMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C621C5A3076FBC97BFB4F367993A5BB /* LGSideMenuGesturesHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0600AB6282227FFC16DE0EF7F67720A7 /* LGSideMenuGesturesHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D09B0AC70AD56B27CBFFE3BC1D77F79 /* LGSideMenuGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B970007EAF7E3449D7DD3E274C5D9678 /* LGSideMenuGesturesHandler.m */; };
+		8A8AD59125675F6CF0A49217216A408C /* UIViewController+LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4165074B1287A2D5FC16CA1A9BCF480D /* UIViewController+LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98ADA5B9F5CC01ACC6221499B78A40D5 /* LGSideMenuBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFFEB9C67B02BAF34F96B86AB136F9B /* LGSideMenuBorderView.m */; };
+		A7517960B1B80338ADB40F4FB811389A /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2755B5B82AFC0CD80707C6190C3991DA /* LGSideMenuController.m */; };
+		BA9A713DFE487CF3C4407C8575755978 /* Pods-diamondCard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6B0A4B44E9BD80A4B0A9421993FB9B /* Pods-diamondCard-dummy.m */; };
+		BFA43274A11980FA6658CB838663B742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CB62266D292F21C6B7CD2494EA23496A /* LGSideMenuHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F10A34A076C32ED809E500CD2A60053 /* LGSideMenuHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBF65AEF08FD43FCE2721231062848FE /* Pods-diamondCardTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E610EDA705AFC51D51B1B83FE3B43E3 /* Pods-diamondCardTests-dummy.m */; };
+		CCA7D6DCFB3E36CA3E9A043D487878D3 /* LGSideMenuBorderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D42A29BDE901C2BDB481E4354E2B431 /* LGSideMenuBorderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D003B1C69B0286ACE9679398B08740AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D3BDE7D79CF0E42D1885ECE7EE5ABB0D /* LGSideMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = C56CC31BEF1040EF206AFE40900E813D /* LGSideMenuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD261999E29C17B693795E9334A0934A /* LGSideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB7EB5569A06321744D707D5FB04D5 /* LGSideMenuSegue.m */; };
+		F8913782848E07F154FAACAEFBAFA71A /* LGSideMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8EC5E3D5579CF2BB235A961FB179BE /* LGSideMenuHelper.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A440606D575EE3B5158E8FFED5D6EDAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A667609BF9BD15CE73A76A27D5C8C4B;
+			remoteInfo = LGSideMenuController;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		10AC57D829D97D7921C1AD2930176880 /* libPods-diamondCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diamondCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E1DE2E14699685E69B56A5B5DAB5A1F /* Pods-diamondCardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-diamondCardTests.release.xcconfig"; sourceTree = "<group>"; };
-		3DD82694C72975900F24A60B258CFD46 /* Pods-diamondCardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-diamondCardTests.debug.xcconfig"; sourceTree = "<group>"; };
-		580B934ADC1FCDB8B5E1E5EEE515BDCD /* Pods-diamondCardTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-diamondCardTests-resources.sh"; sourceTree = "<group>"; };
-		5E8D075C703040900EA1C153A6CCC539 /* Pods-diamondCardTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-diamondCardTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		01E1B82D571BEFBE0828200EE00844A3 /* Pods-diamondCard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-diamondCard-umbrella.h"; sourceTree = "<group>"; };
+		0600AB6282227FFC16DE0EF7F67720A7 /* LGSideMenuGesturesHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuGesturesHandler.h; path = LGSideMenuController/LGSideMenuGesturesHandler.h; sourceTree = "<group>"; };
+		1F86F5992AC834658E8F7DB4CA661D98 /* Pods-diamondCardTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-diamondCardTests-frameworks.sh"; sourceTree = "<group>"; };
+		2755B5B82AFC0CD80707C6190C3991DA /* LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuController.m; path = LGSideMenuController/LGSideMenuController.m; sourceTree = "<group>"; };
+		298A6BF75A87E5A528745B066F209F49 /* Pods-diamondCardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-diamondCardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D6B0A4B44E9BD80A4B0A9421993FB9B /* Pods-diamondCard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-diamondCard-dummy.m"; sourceTree = "<group>"; };
+		2E3323B7DA9C30C3BF0E64CD2F02D503 /* LGSideMenuController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LGSideMenuController.modulemap; sourceTree = "<group>"; };
+		2E7A7BC3B96FFBE606D4279D589AD72B /* Pods-diamondCard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-diamondCard.modulemap"; sourceTree = "<group>"; };
+		3715C317BECB2EFE1F77B651C8D98204 /* Pods-diamondCardTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-diamondCardTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3D1D190A4D4FE5AF7153622807B4692C /* LGSideMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGSideMenuController-dummy.m"; sourceTree = "<group>"; };
+		3D42A29BDE901C2BDB481E4354E2B431 /* LGSideMenuBorderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuBorderView.h; path = LGSideMenuController/LGSideMenuBorderView.h; sourceTree = "<group>"; };
+		4105EC328D4653CE19261FC22B051610 /* Pods_diamondCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_diamondCard.framework; path = "Pods-diamondCard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4165074B1287A2D5FC16CA1A9BCF480D /* UIViewController+LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+LGSideMenuController.h"; path = "LGSideMenuController/UIViewController+LGSideMenuController.h"; sourceTree = "<group>"; };
+		4E610EDA705AFC51D51B1B83FE3B43E3 /* Pods-diamondCardTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-diamondCardTests-dummy.m"; sourceTree = "<group>"; };
+		55746BE27FDB2B7FFEBEE22B475D74FF /* Pods-diamondCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-diamondCard.release.xcconfig"; sourceTree = "<group>"; };
+		5B8EC5E3D5579CF2BB235A961FB179BE /* LGSideMenuHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuHelper.m; path = LGSideMenuController/LGSideMenuHelper.m; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		693CDE3898B8DA875D59F803D6CF6CAE /* Pods-diamondCardTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-diamondCardTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		69F1AC882A9EACF692F0BB8B349B4444 /* Pods-diamondCard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-diamondCard-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6BBDA7C1CC500B516A3803E96C31B310 /* Pods-diamondCard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-diamondCard-acknowledgements.plist"; sourceTree = "<group>"; };
-		8F0BD2FEE15BF140A2EA35C6099481BF /* Pods-diamondCardTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-diamondCardTests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94AB70195546F4014F9747C913326E03 /* Pods-diamondCard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-diamondCard-resources.sh"; sourceTree = "<group>"; };
-		A862B70C415D508A8D084B432E8EF33D /* Pods-diamondCardTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-diamondCardTests-dummy.m"; sourceTree = "<group>"; };
-		A96BDC2A21E9024286D71FF5CBCDAC89 /* Pods-diamondCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-diamondCard.release.xcconfig"; sourceTree = "<group>"; };
-		B8A8D8EF89FCB6D31C5A7B88441D2699 /* libPods-diamondCardTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diamondCardTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8EFBE8B6401A285C0E4A62E120A364E /* Pods-diamondCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-diamondCard.debug.xcconfig"; sourceTree = "<group>"; };
-		BA5730861BC19D4C3D8522083A067670 /* Pods-diamondCard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-diamondCard-dummy.m"; sourceTree = "<group>"; };
-		DB66FAFB82547FD0FC691BCF40D76914 /* Pods-diamondCard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-diamondCard-frameworks.sh"; sourceTree = "<group>"; };
+		6898D5BFE09C74FFD47BC1D4F7A55514 /* LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuController.h; path = LGSideMenuController/LGSideMenuController.h; sourceTree = "<group>"; };
+		6ACD3F6F233283D669BCA43FC218FAFE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FFFEB9C67B02BAF34F96B86AB136F9B /* LGSideMenuBorderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuBorderView.m; path = LGSideMenuController/LGSideMenuBorderView.m; sourceTree = "<group>"; };
+		7BC2A0810666C74C93AED17E902204EE /* LGSideMenuView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuView.m; path = LGSideMenuController/LGSideMenuView.m; sourceTree = "<group>"; };
+		863A2A47855C0EF7B1C22FAF46910C88 /* Pods-diamondCard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-diamondCard-frameworks.sh"; sourceTree = "<group>"; };
+		89ECDED7A3D818B6552E429AF55969A4 /* Pods_diamondCardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_diamondCardTests.framework; path = "Pods-diamondCardTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AD354FF841AC5984228C42C1AAD5B01 /* LGSideMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGSideMenuController.xcconfig; sourceTree = "<group>"; };
+		9F10A34A076C32ED809E500CD2A60053 /* LGSideMenuHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuHelper.h; path = LGSideMenuController/LGSideMenuHelper.h; sourceTree = "<group>"; };
+		9F26EE7ECC14155AE2C7465FD7548206 /* Pods-diamondCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-diamondCard.debug.xcconfig"; sourceTree = "<group>"; };
+		ACB60C2069465F9511329EA0DC860D55 /* LGSideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LGSideMenuController.framework; path = LGSideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87CBB9BE55DF9BDC44EB5CF1B2B51F3 /* Pods-diamondCardTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-diamondCardTests-resources.sh"; sourceTree = "<group>"; };
+		B970007EAF7E3449D7DD3E274C5D9678 /* LGSideMenuGesturesHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuGesturesHandler.m; path = LGSideMenuController/LGSideMenuGesturesHandler.m; sourceTree = "<group>"; };
+		C2914F1142FE13AEBE88E819ED8AAC74 /* Pods-diamondCardTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-diamondCardTests.modulemap"; sourceTree = "<group>"; };
+		C56CC31BEF1040EF206AFE40900E813D /* LGSideMenuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuView.h; path = LGSideMenuController/LGSideMenuView.h; sourceTree = "<group>"; };
+		C8019BCCF0A8EE5AF050BE0A92DC64C7 /* Pods-diamondCardTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-diamondCardTests-umbrella.h"; sourceTree = "<group>"; };
+		C990D6D33FE94410B9AC2DD8E2E42954 /* Pods-diamondCardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-diamondCardTests.release.xcconfig"; sourceTree = "<group>"; };
+		D67816B9EFCDEFA1624B7BAD8A395C5D /* Pods-diamondCard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-diamondCard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D7FB7EB5569A06321744D707D5FB04D5 /* LGSideMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuSegue.m; path = LGSideMenuController/LGSideMenuSegue.m; sourceTree = "<group>"; };
+		D91D73F736FD5E3DAE723E91EAE18109 /* LGSideMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-umbrella.h"; sourceTree = "<group>"; };
+		DA4EE2957E07DB6AC43DCB45040804B8 /* Pods-diamondCard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-diamondCard-resources.sh"; sourceTree = "<group>"; };
+		DF0DA7AC08A9AC14C84DFC816046AA1C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C49A0C92EC1B6B0A44D164F62B1177 /* Pods-diamondCardTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-diamondCardTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E5061350885FB99E70964C8D798153E9 /* LGSideMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-prefix.pch"; sourceTree = "<group>"; };
+		ECE1B34517FE950C9F502D123A0683E9 /* LGSideMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuSegue.h; path = LGSideMenuController/LGSideMenuSegue.h; sourceTree = "<group>"; };
+		F4AA9712636DCDAC3EE3B74C8371CA00 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD4662C87D11030D8FF5356B3260DD25 /* UIViewController+LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+LGSideMenuController.m"; path = "LGSideMenuController/UIViewController+LGSideMenuController.m"; sourceTree = "<group>"; };
+		FE2F6634D5498E6A8D73FD2815B231D0 /* Pods-diamondCard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-diamondCard-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		411D2CCB5D961CF9C5C19DAEAE75E3A3 /* Frameworks */ = {
+		62C56CBDD9DBC1C1EBE283A6AA6266BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FA263BA8F2EA314487BAD67C6086483 /* Foundation.framework in Frameworks */,
+				BFA43274A11980FA6658CB838663B742 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F27896ED59EF2F7566FE6C6C0FF889C4 /* Frameworks */ = {
+		7CF169D774521F176068B3A3ECCE19C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDDD1BFCC6994B40B222BE581CB87056 /* Foundation.framework in Frameworks */,
+				09A01C0A2E0CEDD11BA01FF943C58581 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A097F1298D1943F42FFE2777171A66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D003B1C69B0286ACE9679398B08740AC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F2B7F11A266AACB0AB6D8EDA822F8AC /* Targets Support Files */ = {
+		04CA86AD2A7FD67B4974346C21BE3C4F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FCCA3C98BF5A60BB87FBFB1B0940B314 /* Pods-diamondCard */,
-				681DB69206E9F9BDF37075723CB637C7 /* Pods-diamondCardTests */,
+				1FAB099BBF03882BE0A7F47311D279E0 /* Pods-diamondCard */,
+				EEEA476C55CF11DB7DB54D8643081FFF /* Pods-diamondCardTests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		681DB69206E9F9BDF37075723CB637C7 /* Pods-diamondCardTests */ = {
+		09A97BE1275A36D823A9B802D043CE1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				693CDE3898B8DA875D59F803D6CF6CAE /* Pods-diamondCardTests-acknowledgements.markdown */,
-				5E8D075C703040900EA1C153A6CCC539 /* Pods-diamondCardTests-acknowledgements.plist */,
-				A862B70C415D508A8D084B432E8EF33D /* Pods-diamondCardTests-dummy.m */,
-				8F0BD2FEE15BF140A2EA35C6099481BF /* Pods-diamondCardTests-frameworks.sh */,
-				580B934ADC1FCDB8B5E1E5EEE515BDCD /* Pods-diamondCardTests-resources.sh */,
-				3DD82694C72975900F24A60B258CFD46 /* Pods-diamondCardTests.debug.xcconfig */,
-				1E1DE2E14699685E69B56A5B5DAB5A1F /* Pods-diamondCardTests.release.xcconfig */,
+				BC3FF4F298100B20A82EABBC15D85392 /* LGSideMenuController */,
 			);
-			name = "Pods-diamondCardTests";
-			path = "Target Support Files/Pods-diamondCardTests";
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1FAB099BBF03882BE0A7F47311D279E0 /* Pods-diamondCard */ = {
+			isa = PBXGroup;
+			children = (
+				6ACD3F6F233283D669BCA43FC218FAFE /* Info.plist */,
+				2E7A7BC3B96FFBE606D4279D589AD72B /* Pods-diamondCard.modulemap */,
+				D67816B9EFCDEFA1624B7BAD8A395C5D /* Pods-diamondCard-acknowledgements.markdown */,
+				FE2F6634D5498E6A8D73FD2815B231D0 /* Pods-diamondCard-acknowledgements.plist */,
+				2D6B0A4B44E9BD80A4B0A9421993FB9B /* Pods-diamondCard-dummy.m */,
+				863A2A47855C0EF7B1C22FAF46910C88 /* Pods-diamondCard-frameworks.sh */,
+				DA4EE2957E07DB6AC43DCB45040804B8 /* Pods-diamondCard-resources.sh */,
+				01E1B82D571BEFBE0828200EE00844A3 /* Pods-diamondCard-umbrella.h */,
+				9F26EE7ECC14155AE2C7465FD7548206 /* Pods-diamondCard.debug.xcconfig */,
+				55746BE27FDB2B7FFEBEE22B475D74FF /* Pods-diamondCard.release.xcconfig */,
+			);
+			name = "Pods-diamondCard";
+			path = "Target Support Files/Pods-diamondCard";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -83,9 +158,20 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				FA8A9BCBF116E30AF7A514943860ACDC /* Products */,
-				5F2B7F11A266AACB0AB6D8EDA822F8AC /* Targets Support Files */,
+				09A97BE1275A36D823A9B802D043CE1A /* Pods */,
+				BA2910A1AB000294B6CF0287FD729896 /* Products */,
+				04CA86AD2A7FD67B4974346C21BE3C4F /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		BA2910A1AB000294B6CF0287FD729896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACB60C2069465F9511329EA0DC860D55 /* LGSideMenuController.framework */,
+				4105EC328D4653CE19261FC22B051610 /* Pods_diamondCard.framework */,
+				89ECDED7A3D818B6552E429AF55969A4 /* Pods_diamondCardTests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -96,6 +182,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC3FF4F298100B20A82EABBC15D85392 /* LGSideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				3D42A29BDE901C2BDB481E4354E2B431 /* LGSideMenuBorderView.h */,
+				6FFFEB9C67B02BAF34F96B86AB136F9B /* LGSideMenuBorderView.m */,
+				6898D5BFE09C74FFD47BC1D4F7A55514 /* LGSideMenuController.h */,
+				2755B5B82AFC0CD80707C6190C3991DA /* LGSideMenuController.m */,
+				0600AB6282227FFC16DE0EF7F67720A7 /* LGSideMenuGesturesHandler.h */,
+				B970007EAF7E3449D7DD3E274C5D9678 /* LGSideMenuGesturesHandler.m */,
+				9F10A34A076C32ED809E500CD2A60053 /* LGSideMenuHelper.h */,
+				5B8EC5E3D5579CF2BB235A961FB179BE /* LGSideMenuHelper.m */,
+				ECE1B34517FE950C9F502D123A0683E9 /* LGSideMenuSegue.h */,
+				D7FB7EB5569A06321744D707D5FB04D5 /* LGSideMenuSegue.m */,
+				C56CC31BEF1040EF206AFE40900E813D /* LGSideMenuView.h */,
+				7BC2A0810666C74C93AED17E902204EE /* LGSideMenuView.m */,
+				4165074B1287A2D5FC16CA1A9BCF480D /* UIViewController+LGSideMenuController.h */,
+				FD4662C87D11030D8FF5356B3260DD25 /* UIViewController+LGSideMenuController.m */,
+				CDFFFC38238AE84291BC6472CB367BC1 /* Support Files */,
+			);
+			name = LGSideMenuController;
+			path = LGSideMenuController;
+			sourceTree = "<group>";
+		};
+		CDFFFC38238AE84291BC6472CB367BC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF0DA7AC08A9AC14C84DFC816046AA1C /* Info.plist */,
+				2E3323B7DA9C30C3BF0E64CD2F02D503 /* LGSideMenuController.modulemap */,
+				9AD354FF841AC5984228C42C1AAD5B01 /* LGSideMenuController.xcconfig */,
+				3D1D190A4D4FE5AF7153622807B4692C /* LGSideMenuController-dummy.m */,
+				E5061350885FB99E70964C8D798153E9 /* LGSideMenuController-prefix.pch */,
+				D91D73F736FD5E3DAE723E91EAE18109 /* LGSideMenuController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LGSideMenuController";
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,55 +227,85 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FA8A9BCBF116E30AF7A514943860ACDC /* Products */ = {
+		EEEA476C55CF11DB7DB54D8643081FFF /* Pods-diamondCardTests */ = {
 			isa = PBXGroup;
 			children = (
-				10AC57D829D97D7921C1AD2930176880 /* libPods-diamondCard.a */,
-				B8A8D8EF89FCB6D31C5A7B88441D2699 /* libPods-diamondCardTests.a */,
+				F4AA9712636DCDAC3EE3B74C8371CA00 /* Info.plist */,
+				C2914F1142FE13AEBE88E819ED8AAC74 /* Pods-diamondCardTests.modulemap */,
+				3715C317BECB2EFE1F77B651C8D98204 /* Pods-diamondCardTests-acknowledgements.markdown */,
+				E1C49A0C92EC1B6B0A44D164F62B1177 /* Pods-diamondCardTests-acknowledgements.plist */,
+				4E610EDA705AFC51D51B1B83FE3B43E3 /* Pods-diamondCardTests-dummy.m */,
+				1F86F5992AC834658E8F7DB4CA661D98 /* Pods-diamondCardTests-frameworks.sh */,
+				B87CBB9BE55DF9BDC44EB5CF1B2B51F3 /* Pods-diamondCardTests-resources.sh */,
+				C8019BCCF0A8EE5AF050BE0A92DC64C7 /* Pods-diamondCardTests-umbrella.h */,
+				298A6BF75A87E5A528745B066F209F49 /* Pods-diamondCardTests.debug.xcconfig */,
+				C990D6D33FE94410B9AC2DD8E2E42954 /* Pods-diamondCardTests.release.xcconfig */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FCCA3C98BF5A60BB87FBFB1B0940B314 /* Pods-diamondCard */ = {
-			isa = PBXGroup;
-			children = (
-				69F1AC882A9EACF692F0BB8B349B4444 /* Pods-diamondCard-acknowledgements.markdown */,
-				6BBDA7C1CC500B516A3803E96C31B310 /* Pods-diamondCard-acknowledgements.plist */,
-				BA5730861BC19D4C3D8522083A067670 /* Pods-diamondCard-dummy.m */,
-				DB66FAFB82547FD0FC691BCF40D76914 /* Pods-diamondCard-frameworks.sh */,
-				94AB70195546F4014F9747C913326E03 /* Pods-diamondCard-resources.sh */,
-				B8EFBE8B6401A285C0E4A62E120A364E /* Pods-diamondCard.debug.xcconfig */,
-				A96BDC2A21E9024286D71FF5CBCDAC89 /* Pods-diamondCard.release.xcconfig */,
-			);
-			name = "Pods-diamondCard";
-			path = "Target Support Files/Pods-diamondCard";
+			name = "Pods-diamondCardTests";
+			path = "Target Support Files/Pods-diamondCardTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		300F574E7C221241877B7E809365E057 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A960CF6CF591E4DD73076B0EEB05EE /* Pods-diamondCard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6FCC04CD377F57DA54519635419F1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59BFA70CCE466DE51ED456A31D78E0D1 /* Pods-diamondCardTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8FD8BFE14A00521E9769657292FD1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA7D6DCFB3E36CA3E9A043D487878D3 /* LGSideMenuBorderView.h in Headers */,
+				66FF3ECCC8D6D65237027DEC7B5B84A8 /* LGSideMenuController-umbrella.h in Headers */,
+				3AF64ECC40D98E8EC9F9568A8DA0F78B /* LGSideMenuController.h in Headers */,
+				6C621C5A3076FBC97BFB4F367993A5BB /* LGSideMenuGesturesHandler.h in Headers */,
+				CB62266D292F21C6B7CD2494EA23496A /* LGSideMenuHelper.h in Headers */,
+				0739EF16EE19E441AB7C353D7EC92329 /* LGSideMenuSegue.h in Headers */,
+				D3BDE7D79CF0E42D1885ECE7EE5ABB0D /* LGSideMenuView.h in Headers */,
+				8A8AD59125675F6CF0A49217216A408C /* UIViewController+LGSideMenuController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		329FE050DA42EEC825EB2AB8AFDEB26A /* Pods-diamondCard */ = {
+		0A667609BF9BD15CE73A76A27D5C8C4B /* LGSideMenuController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E8A2FFE3246DD58E68635DDE79E0175 /* Build configuration list for PBXNativeTarget "Pods-diamondCard" */;
+			buildConfigurationList = 419BEC0D9D7CC305F10484D8AB6D1B98 /* Build configuration list for PBXNativeTarget "LGSideMenuController" */;
 			buildPhases = (
-				0101B6D879AF45A74736AE38ABAE4C9B /* Sources */,
-				411D2CCB5D961CF9C5C19DAEAE75E3A3 /* Frameworks */,
+				05BDAF5AABD880E55B646F7214912E70 /* Sources */,
+				62C56CBDD9DBC1C1EBE283A6AA6266BE /* Frameworks */,
+				6D8FD8BFE14A00521E9769657292FD1B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-diamondCard";
-			productName = "Pods-diamondCard";
-			productReference = 10AC57D829D97D7921C1AD2930176880 /* libPods-diamondCard.a */;
-			productType = "com.apple.product-type.library.static";
+			name = LGSideMenuController;
+			productName = LGSideMenuController;
+			productReference = ACB60C2069465F9511329EA0DC860D55 /* LGSideMenuController.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		9E82DAEC902ADA036EEB142C91110836 /* Pods-diamondCardTests */ = {
+		17DB40FA4FC94CDECCD94017510D8DDE /* Pods-diamondCardTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B529B748F47CD8F35B169EF18698448 /* Build configuration list for PBXNativeTarget "Pods-diamondCardTests" */;
+			buildConfigurationList = AE77C722D92F23FF09392C2E1649C98A /* Build configuration list for PBXNativeTarget "Pods-diamondCardTests" */;
 			buildPhases = (
-				CC2B399BE8E1A9D7E530847D9CF13A74 /* Sources */,
-				F27896ED59EF2F7566FE6C6C0FF889C4 /* Frameworks */,
+				2CB721E53806F4BD426BA4305F9DB25E /* Sources */,
+				7CF169D774521F176068B3A3ECCE19C9 /* Frameworks */,
+				4B6FCC04CD377F57DA54519635419F1C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -160,8 +313,26 @@
 			);
 			name = "Pods-diamondCardTests";
 			productName = "Pods-diamondCardTests";
-			productReference = B8A8D8EF89FCB6D31C5A7B88441D2699 /* libPods-diamondCardTests.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 89ECDED7A3D818B6552E429AF55969A4 /* Pods_diamondCardTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		827A8F268646D53FB1A076B92AD7490A /* Pods-diamondCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CBA4B7D685A4391F8D30DC7CB348562 /* Build configuration list for PBXNativeTarget "Pods-diamondCard" */;
+			buildPhases = (
+				C2AF898DE5A19D3CB968F6D1791ABA3B /* Sources */,
+				D4A097F1298D1943F42FFE2777171A66 /* Frameworks */,
+				300F574E7C221241877B7E809365E057 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C4C1EA778B97AD1530B749A61132972 /* PBXTargetDependency */,
+			);
+			name = "Pods-diamondCard";
+			productName = "Pods-diamondCard";
+			productReference = 4105EC328D4653CE19261FC22B051610 /* Pods_diamondCard.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -170,7 +341,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -180,60 +351,130 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FA8A9BCBF116E30AF7A514943860ACDC /* Products */;
+			productRefGroup = BA2910A1AB000294B6CF0287FD729896 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				329FE050DA42EEC825EB2AB8AFDEB26A /* Pods-diamondCard */,
-				9E82DAEC902ADA036EEB142C91110836 /* Pods-diamondCardTests */,
+				0A667609BF9BD15CE73A76A27D5C8C4B /* LGSideMenuController */,
+				827A8F268646D53FB1A076B92AD7490A /* Pods-diamondCard */,
+				17DB40FA4FC94CDECCD94017510D8DDE /* Pods-diamondCardTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0101B6D879AF45A74736AE38ABAE4C9B /* Sources */ = {
+		05BDAF5AABD880E55B646F7214912E70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0C76651B817ADE469C35F046FB49168 /* Pods-diamondCard-dummy.m in Sources */,
+				98ADA5B9F5CC01ACC6221499B78A40D5 /* LGSideMenuBorderView.m in Sources */,
+				147A694AEEF09AED23BDA121210C1C02 /* LGSideMenuController-dummy.m in Sources */,
+				A7517960B1B80338ADB40F4FB811389A /* LGSideMenuController.m in Sources */,
+				7D09B0AC70AD56B27CBFFE3BC1D77F79 /* LGSideMenuGesturesHandler.m in Sources */,
+				F8913782848E07F154FAACAEFBAFA71A /* LGSideMenuHelper.m in Sources */,
+				DD261999E29C17B693795E9334A0934A /* LGSideMenuSegue.m in Sources */,
+				5010D602D86C7BAE5657EE8F67DCC1C7 /* LGSideMenuView.m in Sources */,
+				373AC6B0FA384BDF6099C956F31DE6BC /* UIViewController+LGSideMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC2B399BE8E1A9D7E530847D9CF13A74 /* Sources */ = {
+		2CB721E53806F4BD426BA4305F9DB25E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C762E1B19E962AD83705211F934C8A12 /* Pods-diamondCardTests-dummy.m in Sources */,
+				CBF65AEF08FD43FCE2721231062848FE /* Pods-diamondCardTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2AF898DE5A19D3CB968F6D1791ABA3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9A713DFE487CF3C4407C8575755978 /* Pods-diamondCard-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6C4C1EA778B97AD1530B749A61132972 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LGSideMenuController;
+			target = 0A667609BF9BD15CE73A76A27D5C8C4B /* LGSideMenuController */;
+			targetProxy = A440606D575EE3B5158E8FFED5D6EDAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		53A920796DC2174E4FD8B32C8CFD8F82 /* Debug */ = {
+		1414CD8601A77C07EB54FA37CC50451E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8EFBE8B6401A285C0E4A62E120A364E /* Pods-diamondCard.debug.xcconfig */;
+			baseConfigurationReference = 55746BE27FDB2B7FFEBEE22B475D74FF /* Pods-diamondCard.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_FILE = "Target Support Files/Pods-diamondCard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MODULEMAP_FILE = "Target Support Files/Pods-diamondCard/Pods-diamondCard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_diamondCard;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */ = {
+		34F9863025D618F50AF91F903BF28B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AD354FF841AC5984228C42C1AAD5B01 /* LGSideMenuController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LGSideMenuController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LGSideMenuController/LGSideMenuController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LGSideMenuController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,9 +484,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -253,21 +492,131 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D7EC743065BE9ED9E524293E1A39DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298A6BF75A87E5A528745B066F209F49 /* Pods-diamondCardTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-diamondCardTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-diamondCardTests/Pods-diamondCardTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_diamondCardTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABEC4AD600DB3D65270042550419D253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C990D6D33FE94410B9AC2DD8E2E42954 /* Pods-diamondCardTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-diamondCardTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-diamondCardTests/Pods-diamondCardTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_diamondCardTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -281,144 +630,90 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		A714EF5F90873B72F79E094C2BC63561 /* Debug */ = {
+		D112700D1957B29F631671C75C04486A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DD82694C72975900F24A60B258CFD46 /* Pods-diamondCardTests.debug.xcconfig */;
+			baseConfigurationReference = 9AD354FF841AC5984228C42C1AAD5B01 /* LGSideMenuController.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LGSideMenuController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LGSideMenuController/LGSideMenuController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LGSideMenuController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FBE67F7F5397705B73C0446E6A0A0D8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F26EE7ECC14155AE2C7465FD7548206 /* Pods-diamondCard.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-diamondCard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-diamondCard/Pods-diamondCard.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_diamondCard;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		C03B8870130C98D1B02B59D003687524 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C0E8609FD8C95C1A1169D19B807A5C27 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A96BDC2A21E9024286D71FF5CBCDAC89 /* Pods-diamondCard.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D7624F06355291D2AD96E5D688DAC1A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E1DE2E14699685E69B56A5B5DAB5A1F /* Pods-diamondCardTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B529B748F47CD8F35B169EF18698448 /* Build configuration list for PBXNativeTarget "Pods-diamondCardTests" */ = {
+		2CBA4B7D685A4391F8D30DC7CB348562 /* Build configuration list for PBXNativeTarget "Pods-diamondCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A714EF5F90873B72F79E094C2BC63561 /* Debug */,
-				D7624F06355291D2AD96E5D688DAC1A7 /* Release */,
+				FBE67F7F5397705B73C0446E6A0A0D8A /* Debug */,
+				1414CD8601A77C07EB54FA37CC50451E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -426,17 +721,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */,
-				C03B8870130C98D1B02B59D003687524 /* Release */,
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E8A2FFE3246DD58E68635DDE79E0175 /* Build configuration list for PBXNativeTarget "Pods-diamondCard" */ = {
+		419BEC0D9D7CC305F10484D8AB6D1B98 /* Build configuration list for PBXNativeTarget "LGSideMenuController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				53A920796DC2174E4FD8B32C8CFD8F82 /* Debug */,
-				C0E8609FD8C95C1A1169D19B807A5C27 /* Release */,
+				D112700D1957B29F631671C75C04486A /* Debug */,
+				34F9863025D618F50AF91F903BF28B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE77C722D92F23FF09392C2E1649C98A /* Build configuration list for PBXNativeTarget "Pods-diamondCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7EC743065BE9ED9E524293E1A39DE7 /* Debug */,
+				ABEC4AD600DB3D65270042550419D253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

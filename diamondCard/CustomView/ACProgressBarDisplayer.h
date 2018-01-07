@@ -34,10 +34,10 @@
 
 @interface ACProgressBarDisplayer : NSObject
 
-// показать сообщение
+
 -(void) displayOnView:(UIView*)view withMessage:(NSString*)message andColor:(UIColor*)color andIndicator:(BOOL)indicator andFaded:(BOOL)faded;
 
-// скрыть сообщение
+
 -(void) removeFromView:(UIView*)view;
 
 
