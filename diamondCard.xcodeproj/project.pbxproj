@@ -24,6 +24,7 @@
 		437BE39C1F89547B00F7FB0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE39B1F89547B00F7FB0C /* main.m */; };
 		437BE3A61F89547B00F7FB0C /* diamondCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3A51F89547B00F7FB0C /* diamondCardTests.m */; };
 		437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BE3B31F8954BF00F7FB0C /* DCLoginViewController.m */; };
+		43DA2F652002B0B8001D2203 /* DCRootBuyerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DA2F642002B0B8001D2203 /* DCRootBuyerVC.m */; };
 		43DF5DC620023D3C0005EA55 /* DCSignInUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DF5DC520023D3C0005EA55 /* DCSignInUpVC.m */; };
 		43DF5DCC20024D7A0005EA55 /* DCSignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DF5DCB20024D7A0005EA55 /* DCSignInVC.m */; };
 		839E720CF431F1A2CB6C07F2 /* Pods_diamondCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CF3470ED2626412CC0B8D1 /* Pods_diamondCard.framework */; };
@@ -102,6 +103,8 @@
 		437BE3B21F8954BF00F7FB0C /* DCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCLoginViewController.h; sourceTree = "<group>"; };
 		437BE3B31F8954BF00F7FB0C /* DCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCLoginViewController.m; sourceTree = "<group>"; };
 		437BE3B61F895D3200F7FB0C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		43DA2F632002B0B8001D2203 /* DCRootBuyerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCRootBuyerVC.h; sourceTree = "<group>"; };
+		43DA2F642002B0B8001D2203 /* DCRootBuyerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCRootBuyerVC.m; sourceTree = "<group>"; };
 		43DF5DC420023D3C0005EA55 /* DCSignInUpVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCSignInUpVC.h; sourceTree = "<group>"; };
 		43DF5DC520023D3C0005EA55 /* DCSignInUpVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCSignInUpVC.m; sourceTree = "<group>"; };
 		43DF5DCA20024D7A0005EA55 /* DCSignInVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCSignInVC.h; sourceTree = "<group>"; };
@@ -199,6 +202,7 @@
 		430363A4200271EB006E5CE6 /* DCBuyerWorkflow */ = {
 			isa = PBXGroup;
 			children = (
+				43DA2F602002B063001D2203 /* DCRootBuyerVC */,
 			);
 			path = DCBuyerWorkflow;
 			sourceTree = "<group>";
@@ -206,6 +210,7 @@
 		430363A5200271F8006E5CE6 /* DCContAgentWorkflow */ = {
 			isa = PBXGroup;
 			children = (
+				43DA2F5F2002B057001D2203 /* New Group */,
 			);
 			path = DCContAgentWorkflow;
 			sourceTree = "<group>";
@@ -378,6 +383,22 @@
 				4873F9FC15C0858F3419C964 /* Pods_diamondCardTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43DA2F5F2002B057001D2203 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		43DA2F602002B063001D2203 /* DCRootBuyerVC */ = {
+			isa = PBXGroup;
+			children = (
+				43DA2F632002B0B8001D2203 /* DCRootBuyerVC.h */,
+				43DA2F642002B0B8001D2203 /* DCRootBuyerVC.m */,
+			);
+			path = DCRootBuyerVC;
 			sourceTree = "<group>";
 		};
 		43DF5DC320023D140005EA55 /* DCViewControllers */ = {
@@ -692,6 +713,7 @@
 				D70B9AFD1FDAD04300494D09 /* LGNotificationsWrapper.m in Sources */,
 				D718EDBB1FAA22D500AB5CEC /* UserOperationsViewController.m in Sources */,
 				437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */,
+				43DA2F652002B0B8001D2203 /* DCRootBuyerVC.m in Sources */,
 				D7AAA0F61F8E40E6003A7F6C /* ACProgressBarDisplayer.m in Sources */,
 				D71AFC951F9A0ED8000A44C9 /* LGUserData.m in Sources */,
 				431B4C8F1FC26F1300974DB3 /* NSDBuyerOperationCell.m in Sources */,
