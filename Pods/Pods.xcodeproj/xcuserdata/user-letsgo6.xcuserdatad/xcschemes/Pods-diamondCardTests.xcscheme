@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0910"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9E82DAEC902ADA036EEB142C91110836"
-               BuildableName = "libPods-diamondCardTests.a"
+               BlueprintIdentifier = "17DB40FA4FC94CDECCD94017510D8DDE"
+               BuildableName = "Pods_diamondCardTests.framework"
                BlueprintName = "Pods-diamondCardTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -47,8 +47,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9E82DAEC902ADA036EEB142C91110836"
-            BuildableName = "libPods-diamondCardTests.a"
+            BlueprintIdentifier = "17DB40FA4FC94CDECCD94017510D8DDE"
+            BuildableName = "Pods_diamondCardTests.framework"
             BlueprintName = "Pods-diamondCardTests"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>

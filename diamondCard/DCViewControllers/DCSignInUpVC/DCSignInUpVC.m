@@ -22,7 +22,6 @@
 
 }
 
-
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     __typeof__(self) __weak weakSelf = self;

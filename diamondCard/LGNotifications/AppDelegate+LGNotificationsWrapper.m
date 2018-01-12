@@ -13,8 +13,4 @@
     [[LGNotificationsWrapper currentInstance] sendToken:deviceToken];
 }
 
-
-
-
-
 @end

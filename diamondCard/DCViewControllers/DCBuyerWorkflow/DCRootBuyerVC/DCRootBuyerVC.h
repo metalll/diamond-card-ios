@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LGSideMenuController.h"
 
-@interface DCRootBuyerVC : UIViewController
+@interface DCRootBuyerVC : LGSideMenuController
 
 @end

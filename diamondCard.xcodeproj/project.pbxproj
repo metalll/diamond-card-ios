@@ -43,6 +43,10 @@
 		D71AFC951F9A0ED8000A44C9 /* LGUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC941F9A0ED8000A44C9 /* LGUserData.m */; };
 		D71AFC991F9A234A000A44C9 /* ContrAgentHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC981F9A234A000A44C9 /* ContrAgentHomeVC.m */; };
 		D71AFC9C1F9A46F5000A44C9 /* PuscareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D71AFC9B1F9A46F5000A44C9 /* PuscareViewController.m */; };
+		D781B3632008EA6700B6ABF1 /* DCMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = D781B3622008EA6700B6ABF1 /* DCMapView.m */; };
+		D781B3682009082B00B6ABF1 /* DCBuyerNav.m in Sources */ = {isa = PBXBuildFile; fileRef = D781B3672009082B00B6ABF1 /* DCBuyerNav.m */; };
+		D781B36B200913DF00B6ABF1 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D781B36A200913DF00B6ABF1 /* NavigationController.m */; };
+		D781B36E200916AF00B6ABF1 /* SLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D781B36D200916AF00B6ABF1 /* SLViewController.m */; };
 		D786D8871FDACD9200E411DC /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = D786D87D1FDACD9000E411DC /* QRCodeReader.m */; };
 		D786D8881FDACD9200E411DC /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D786D87E1FDACD9100E411DC /* QRCodeReaderViewController.m */; };
 		D786D8891FDACD9200E411DC /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D786D8811FDACD9100E411DC /* QRCodeReaderView.m */; };
@@ -140,6 +144,14 @@
 		D71AFC981F9A234A000A44C9 /* ContrAgentHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContrAgentHomeVC.m; sourceTree = "<group>"; };
 		D71AFC9A1F9A46F5000A44C9 /* PuscareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PuscareViewController.h; sourceTree = "<group>"; };
 		D71AFC9B1F9A46F5000A44C9 /* PuscareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuscareViewController.m; sourceTree = "<group>"; };
+		D781B3612008EA6700B6ABF1 /* DCMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCMapView.h; sourceTree = "<group>"; };
+		D781B3622008EA6700B6ABF1 /* DCMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCMapView.m; sourceTree = "<group>"; };
+		D781B3662009082B00B6ABF1 /* DCBuyerNav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCBuyerNav.h; sourceTree = "<group>"; };
+		D781B3672009082B00B6ABF1 /* DCBuyerNav.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCBuyerNav.m; sourceTree = "<group>"; };
+		D781B369200913DF00B6ABF1 /* NavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		D781B36A200913DF00B6ABF1 /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		D781B36C200916AF00B6ABF1 /* SLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLViewController.h; sourceTree = "<group>"; };
+		D781B36D200916AF00B6ABF1 /* SLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLViewController.m; sourceTree = "<group>"; };
 		D786D87C1FDACD9000E411DC /* QRCodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRCodeReader.h; path = diamondCard/QRCodeReader/QRCodeReader.h; sourceTree = SOURCE_ROOT; };
 		D786D87D1FDACD9000E411DC /* QRCodeReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRCodeReader.m; path = diamondCard/QRCodeReader/QRCodeReader.m; sourceTree = SOURCE_ROOT; };
 		D786D87E1FDACD9100E411DC /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderViewController.m; path = diamondCard/QRCodeReader/QRCodeReaderViewController.m; sourceTree = SOURCE_ROOT; };
@@ -395,8 +407,14 @@
 		43DA2F602002B063001D2203 /* DCRootBuyerVC */ = {
 			isa = PBXGroup;
 			children = (
+				D781B3642009080E00B6ABF1 /* LGNav */,
+				D781B3602008EA4300B6ABF1 /* MapVC */,
 				43DA2F632002B0B8001D2203 /* DCRootBuyerVC.h */,
 				43DA2F642002B0B8001D2203 /* DCRootBuyerVC.m */,
+				D781B369200913DF00B6ABF1 /* NavigationController.h */,
+				D781B36A200913DF00B6ABF1 /* NavigationController.m */,
+				D781B36C200916AF00B6ABF1 /* SLViewController.h */,
+				D781B36D200916AF00B6ABF1 /* SLViewController.m */,
 			);
 			path = DCRootBuyerVC;
 			sourceTree = "<group>";
@@ -470,6 +488,24 @@
 				431B4C8E1FC26F1300974DB3 /* NSDBuyerOperationCell.xib */,
 			);
 			path = ContrAgent;
+			sourceTree = "<group>";
+		};
+		D781B3602008EA4300B6ABF1 /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				D781B3612008EA6700B6ABF1 /* DCMapView.h */,
+				D781B3622008EA6700B6ABF1 /* DCMapView.m */,
+			);
+			path = MapVC;
+			sourceTree = "<group>";
+		};
+		D781B3642009080E00B6ABF1 /* LGNav */ = {
+			isa = PBXGroup;
+			children = (
+				D781B3662009082B00B6ABF1 /* DCBuyerNav.h */,
+				D781B3672009082B00B6ABF1 /* DCBuyerNav.m */,
+			);
+			path = LGNav;
 			sourceTree = "<group>";
 		};
 		D786D87B1FDACD7200E411DC /* QRCodeReader */ = {
@@ -651,7 +687,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9B3E5897B81F258E5BDAB93F /* [CP] Embed Pods Frameworks */ = {
@@ -684,7 +720,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FFACB81D8441E32F1C124BFA /* [CP] Embed Pods Frameworks */ = {
@@ -693,9 +729,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-diamondCard/Pods-diamondCard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -711,6 +750,7 @@
 			files = (
 				437BE3911F89547B00F7FB0C /* ViewController.m in Sources */,
 				D70B9AFD1FDAD04300494D09 /* LGNotificationsWrapper.m in Sources */,
+				D781B3682009082B00B6ABF1 /* DCBuyerNav.m in Sources */,
 				D718EDBB1FAA22D500AB5CEC /* UserOperationsViewController.m in Sources */,
 				437BE3B41F8954C000F7FB0C /* DCLoginViewController.m in Sources */,
 				43DA2F652002B0B8001D2203 /* DCRootBuyerVC.m in Sources */,
@@ -726,11 +766,13 @@
 				D70B9B001FDAD0F700494D09 /* AppDelegate+LGNotificationsWrapper.m in Sources */,
 				D71AFC921F9A0D88000A44C9 /* LGQrHomeVC.m in Sources */,
 				D70B9B031FDADCFC00494D09 /* LGNotificationsRequest.m in Sources */,
+				D781B36E200916AF00B6ABF1 /* SLViewController.m in Sources */,
 				D786D8891FDACD9200E411DC /* QRCodeReaderView.m in Sources */,
 				D71AFC881F9A0BDE000A44C9 /* CIColor+QRCode.m in Sources */,
 				D718EDB51FAA15E100AB5CEC /* DCCashbackRequest.m in Sources */,
 				D7D11C681FC30FEC00A5A553 /* LGReachibility.m in Sources */,
 				434886261F8A10A3007CC64F /* LGError.m in Sources */,
+				D781B3632008EA6700B6ABF1 /* DCMapView.m in Sources */,
 				D71AFC9C1F9A46F5000A44C9 /* PuscareViewController.m in Sources */,
 				434886301F8A1A5C007CC64F /* NSMutableURLRequest+LGHTTP.m in Sources */,
 				434886331F8A1AF3007CC64F /* DCRequest.m in Sources */,
@@ -744,6 +786,7 @@
 				437BE38E1F89547A00F7FB0C /* AppDelegate.m in Sources */,
 				D786D8871FDACD9200E411DC /* QRCodeReader.m in Sources */,
 				434886221F8A105C007CC64F /* LGHTTPClient.m in Sources */,
+				D781B36B200913DF00B6ABF1 /* NavigationController.m in Sources */,
 				D718EDB81FAA1BDF00AB5CEC /* ContrAgentOperationsViewController.m in Sources */,
 				D7D11C611FC2DD7900A5A553 /* DCRegReq.m in Sources */,
 			);

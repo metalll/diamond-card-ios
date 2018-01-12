@@ -16,8 +16,9 @@
 #import "LGUserData.h"
 #import "LGKeychain.h"
 #import "LGReachibility.h"
-
-
+#import "NavigationController.h"
+#import "DCRootBuyerVC.h"
+#import "SLViewController.h"
 
 @interface DCSignInVC () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
@@ -145,7 +146,7 @@
                     NSLog(@"json %@",jsonDic);
                     [weakSelf hideProgessView];
                     
-                    
+                     SLViewController *viewController = [SLViewController new];
                     
                     
                     if([jsonDic[@"data"][1] isEqualToString:@"ROLE_BUYER"]) {
@@ -158,7 +159,21 @@
                    
                         // -> BUYER MAIN
                         
-                        [weakSelf performSegueWithIdentifier:@"DCRootBuyerVC" sender:weakSelf];
+                        DCRootBuyerVC *vc =(DCRootBuyerVC *) [self.storyboard instantiateViewControllerWithIdentifier:@"DCRootBuyerVC"];
+                        
+                        NavigationController *nav = [[NavigationController alloc] initWithRootViewController:viewController];
+                        vc.rootViewController = nav;
+                        UIWindow *window = UIApplication.sharedApplication.delegate.window;
+                        window.rootViewController = vc;
+                        
+                        
+                        
+                        [UIView transitionWithView:window
+                                          duration:0.3
+                                           options:UIViewAnimationOptionTransitionCrossDissolve
+                                        animations:nil
+                                        completion:nil];
+                        
                     }
                     
                     if([jsonDic[@"data"][1] isEqualToString:@"ROLE_CONTR_AGENT"]) {
